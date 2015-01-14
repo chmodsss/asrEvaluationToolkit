@@ -1,0 +1,46 @@
+HVite -A -D -T 1 -l * -o SWT -b silence -C /data/svn-mirror/Main/Trunk/Scripts/AcousticModel_scripts/HTK/AMCreate_scripts/input_files/config -H ./interim_files/hmm7/macros -H ./interim_files/hmm7/hmmdefs -i ./interim_files/aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -a -I ./interim_files/words.mlf -S ./interim_files/train.scp ./interim_files/dict1 ./interim_files/monophones1 
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+#                 NUMCEPS                       12
+#                 CEPLIFTER                     22
+#                 NUMCHANS                      26
+#                 PREEMCOEF               0.970000
+#                 USEHAMMING                  TRUE
+#                 WINDOWSIZE         250000.000000
+#                 SAVEWITHCRC                 TRUE
+#                 SAVECOMPRESSED              TRUE
+#                 TARGETRATE         100000.000000
+#                 TARGETKIND          MFCC_0_D_N_Z
+
+Read 39 physical / 39 logical HMMs
+Label file will be used to align each file
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20071231-225710-1199141789.8482/mfc/vf3-06.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+silence DEATH HAD COME WITH TERRIBLE SUDDENNESS silence  ==  [2106 frames] -50.6929 [Ac=-106759.3 LM=0.0] (Act=22.6)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20071231-225710-1199141789.8482/mfc/vf3-07.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+silence PHILIP BENT LOWER AND STARED INTO THE FACE OF THE DEAD MAN silence  ==  [2104 frames] -52.1766 [Ac=-109779.6 LM=0.0] (Act=18.5)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20071231-225710-1199141789.8482/mfc/vf3-08.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+silence HE MADE SURE THAT THE MAGAZINE WAS LOADED AND RESUMED HIS PADDLING silence  ==  [2106 frames] -52.2229 [Ac=-109981.4 LM=0.0] (Act=13.3)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20071231-225710-1199141789.8482/mfc/vf3-09.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+silence THE NIGHTGLOW WAS TREACHEROUS TO SHOOT BY silence  ==  [2106 frames] -51.1977 [Ac=-107822.4 LM=0.0] (Act=18.7)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20071231-225710-1199141789.8482/mfc/vf3-10.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+silence THE SINGING VOICE APPROACHED RAPIDLY silence  ==  [2108 frames] -52.8580 [Ac=-111424.7 LM=0.0] (Act=11.1)
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+                  NUMCEPS                       12
+                  CEPLIFTER                     22
+                  NUMCHANS                      26
+                  PREEMCOEF               0.970000
+                  USEHAMMING                  TRUE
+                  WINDOWSIZE         250000.000000
+                  SAVEWITHCRC                 TRUE
+                  SAVECOMPRESSED              TRUE
+                  TARGETRATE         100000.000000
+                  TARGETKIND          MFCC_0_D_N_Z
+

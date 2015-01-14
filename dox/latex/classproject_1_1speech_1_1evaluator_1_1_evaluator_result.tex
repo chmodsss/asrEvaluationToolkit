@@ -1,0 +1,179 @@
+\section{project.\+speech.\+evaluator.\+Evaluator\+Result Class Reference}
+\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result}\index{project.\+speech.\+evaluator.\+Evaluator\+Result@{project.\+speech.\+evaluator.\+Evaluator\+Result}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Evaluator\+Result} (int h, int s, int d, int i, int n, String t)
+\item 
+{\bf Evaluator\+Result} (int h, int s, int d, int i, int n)
+\item 
+int {\bf get\+Hits} ()
+\item 
+int {\bf get\+Substitutions} ()
+\item 
+int {\bf get\+Deletions} ()
+\item 
+int {\bf get\+Insertions} ()
+\item 
+int {\bf get\+Number\+Of\+Words} ()
+\item 
+String {\bf get\+Time} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf hits}
+\item 
+int {\bf substitutions}
+\item 
+int {\bf deletions}
+\item 
+int {\bf insertions}
+\item 
+int {\bf number\+Of\+Words}
+\item 
+String {\bf time\+Span}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!Evaluator\+Result@{Evaluator\+Result}}
+\index{Evaluator\+Result@{Evaluator\+Result}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{Evaluator\+Result}]{\setlength{\rightskip}{0pt plus 5cm}project.\+speech.\+evaluator.\+Evaluator\+Result.\+Evaluator\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{h, }
+\item[{int}]{s, }
+\item[{int}]{d, }
+\item[{int}]{i, }
+\item[{int}]{n, }
+\item[{String}]{t}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a63d6b5c8a7508d8538ce01f660d2c4c4}
+Constructor used by model1 
+\begin{DoxyParams}{Parameters}
+{\em h} & number of hits/correct words \\
+\hline
+{\em s} & number of substituted words \\
+\hline
+{\em d} & number of deleted words \\
+\hline
+{\em i} & number of inserted words \\
+\hline
+{\em n} & number of words in reference text \\
+\hline
+{\em t} & time taken for recognition \\
+\hline
+\end{DoxyParams}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!Evaluator\+Result@{Evaluator\+Result}}
+\index{Evaluator\+Result@{Evaluator\+Result}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{Evaluator\+Result}]{\setlength{\rightskip}{0pt plus 5cm}project.\+speech.\+evaluator.\+Evaluator\+Result.\+Evaluator\+Result (
+\begin{DoxyParamCaption}
+\item[{int}]{h, }
+\item[{int}]{s, }
+\item[{int}]{d, }
+\item[{int}]{i, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a62e4d75cd8fe16d582ed38372a6ee660}
+Constructor used by model2 
+\begin{DoxyParams}{Parameters}
+{\em h} & number of hits/correct words \\
+\hline
+{\em s} & number of substituted words \\
+\hline
+{\em d} & number of deleted words \\
+\hline
+{\em i} & number of inserted words \\
+\hline
+{\em n} & number of words in reference text \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!get\+Deletions@{get\+Deletions}}
+\index{get\+Deletions@{get\+Deletions}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{get\+Deletions}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluator\+Result.\+get\+Deletions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a31ad5c0f0079057bfe88c07e82102fac}
+\begin{DoxyReturn}{Returns}
+number of substituted words 
+\end{DoxyReturn}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!get\+Hits@{get\+Hits}}
+\index{get\+Hits@{get\+Hits}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{get\+Hits}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluator\+Result.\+get\+Hits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a7b4a4aa5e031ab0742ab500734db9abd}
+\begin{DoxyReturn}{Returns}
+number of hits/correct word pairs 
+\end{DoxyReturn}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!get\+Insertions@{get\+Insertions}}
+\index{get\+Insertions@{get\+Insertions}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{get\+Insertions}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluator\+Result.\+get\+Insertions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a5fc55ff05148b638e057504e6d40a448}
+\begin{DoxyReturn}{Returns}
+number of inserted words 
+\end{DoxyReturn}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!get\+Number\+Of\+Words@{get\+Number\+Of\+Words}}
+\index{get\+Number\+Of\+Words@{get\+Number\+Of\+Words}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{get\+Number\+Of\+Words}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluator\+Result.\+get\+Number\+Of\+Words (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_ac37bdfb73446522ebcac3b563c25451c}
+\begin{DoxyReturn}{Returns}
+number of words in reference text 
+\end{DoxyReturn}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!get\+Substitutions@{get\+Substitutions}}
+\index{get\+Substitutions@{get\+Substitutions}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{get\+Substitutions}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluator\+Result.\+get\+Substitutions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a01fa5bf362f5ec8b2e839a1ad54637b9}
+\begin{DoxyReturn}{Returns}
+number of substituted words 
+\end{DoxyReturn}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!get\+Time@{get\+Time}}
+\index{get\+Time@{get\+Time}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{get\+Time}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluator.\+Evaluator\+Result.\+get\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_aa0937a298431ef1a788bd1707e8a7a0d}
+\begin{DoxyReturn}{Returns}
+time consumed by speech recognizer 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!deletions@{deletions}}
+\index{deletions@{deletions}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{deletions}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluator\+Result.\+deletions\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a378c04decbf57e729480a7e28b802ca6}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!hits@{hits}}
+\index{hits@{hits}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{hits}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluator\+Result.\+hits\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a78b20dcb2f8b01b66cb5cc4805ae52b5}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!insertions@{insertions}}
+\index{insertions@{insertions}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{insertions}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluator\+Result.\+insertions\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_ac7b78f1df7b4669b8b8811263ff18c4b}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!number\+Of\+Words@{number\+Of\+Words}}
+\index{number\+Of\+Words@{number\+Of\+Words}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{number\+Of\+Words}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluator\+Result.\+number\+Of\+Words\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a71d0c6f10b4d06e6343e7156f3ba1332}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!substitutions@{substitutions}}
+\index{substitutions@{substitutions}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{substitutions}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluator\+Result.\+substitutions\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a641b78e9746bdb5b5b4f9fb86fb7685e}
+\index{project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}!time\+Span@{time\+Span}}
+\index{time\+Span@{time\+Span}!project\+::speech\+::evaluator\+::\+Evaluator\+Result@{project\+::speech\+::evaluator\+::\+Evaluator\+Result}}
+\subsubsection[{time\+Span}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluator.\+Evaluator\+Result.\+time\+Span\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluator_result_a75610a544860d428cf0b57d0c1a7b15b}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+project/speech/evaluator/{\bf Evaluator\+Result.\+java}\end{DoxyCompactItemize}

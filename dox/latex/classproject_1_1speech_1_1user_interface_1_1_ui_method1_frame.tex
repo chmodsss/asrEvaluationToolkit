@@ -1,0 +1,341 @@
+\section{project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame Class Reference}
+\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame}\index{project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame@{project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bf set\+Chk\+All\+False} (Item\+Event e)
+\item 
+static File {\bf get\+Relative\+Path} (File file)
+\item 
+static void {\bf set\+Default\+Color} ()
+\item 
+static void {\bf set\+Selected\+Asr} (String received)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static J\+Button {\bf btn\+Save\+Result}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static J\+Check\+Box {\bf chk\+Percent\+Hits}
+\item 
+static J\+Check\+Box {\bf chk\+Percent\+Subs}
+\item 
+static J\+Check\+Box {\bf chk\+Percent\+Del}
+\item 
+static J\+Check\+Box {\bf chk\+Percent\+Ins}
+\item 
+static J\+Check\+Box {\bf chk\+M\+E\+R}
+\item 
+static J\+Check\+Box {\bf chk\+W\+I\+L}
+\item 
+static J\+Check\+Box {\bf chk\+W\+E\+R}
+\item 
+static J\+Check\+Box {\bf chk\+A\+L\+L}
+\item 
+static J\+Button {\bf btn\+Dictionary\+Model}
+\item 
+static J\+Button {\bf btn\+Language\+Model}
+\item 
+static J\+Button {\bf btn\+Acoustic\+Model}
+\item 
+static J\+Button {\bf btn\+Check}
+\item 
+static J\+Button {\bf btn\+Instructions}
+\item 
+static J\+Button {\bf btn\+Evaluate}
+\item 
+static J\+Label {\bf lbl\+Speech\+Corpus\+Path}
+\item 
+static J\+File\+Chooser {\bf speech\+Corpus\+Chooser}
+\item 
+static J\+File\+Chooser {\bf dictionary\+Chooser}
+\item 
+static J\+File\+Chooser {\bf acoustic\+Chooser}
+\item 
+static J\+File\+Chooser {\bf language\+Chooser}
+\item 
+static String {\bf speech\+Corpus\+Choosertitle} = \char`\"{}Select the path of Speech corpus...\char`\"{}
+\item 
+static String {\bf dictionary\+Choosertitle} = \char`\"{}Select the dictionary file...\char`\"{}
+\item 
+static String {\bf acoustic\+Choosertitle} = \char`\"{}Select the acoustic file...\char`\"{}
+\item 
+static String {\bf language\+Choosertitle} = \char`\"{}Select the language file...\char`\"{}
+\item 
+static String {\bf current\+Asr\+Selected} = null
+\item 
+static File {\bf speech\+Corpus\+Path\+Result} = null
+\item 
+static boolean {\bf speech\+Corpus\+Loaded} = false
+\item 
+static boolean {\bf models\+Needed} = false
+\item 
+static boolean {\bf dict\+Loaded\+Cmu} = false
+\item 
+static boolean {\bf acous\+Loaded\+Cmu} = false
+\item 
+static boolean {\bf lang\+Loaded\+Cmu} = false
+\item 
+static boolean {\bf dict\+Loaded\+Ispeech} = false
+\item 
+static boolean {\bf acous\+Loaded\+Ispeech} = false
+\item 
+static boolean {\bf lang\+Loaded\+Ispeech} = false
+\item 
+static boolean {\bf check\+Bool} = false
+\item 
+static boolean {\bf check\+Cmu} = false
+\item 
+static boolean {\bf check\+Ispeech} = false
+\item 
+static Object {\bf asr\+Selected\+Obj}
+\item 
+static Array\+List$<$ {\bf Ui\+Asr\+Properties} $>$ {\bf speech\+Properties\+List} = new Array\+List$<${\bf Ui\+Asr\+Properties}$>$()
+\item 
+static Array\+List$<$ J\+Check\+Box $>$ {\bf performance\+List\+Checked} = new Array\+List$<$J\+Check\+Box$>$()
+\item 
+static Array\+List$<$ String $>$ {\bf performance\+List\+Selected} = new Array\+List$<$String$>$()
+\item 
+static Array\+List$<$ String $>$ {\bf asr\+Systems\+Selected} = new Array\+List$<$String$>$()
+\item 
+static String {\bf algorithm\+Selected} = null
+\item 
+static J\+Label {\bf lbl\+Model1}
+\item 
+static J\+Combo\+Box {\bf combo\+Asr\+Select}
+\item 
+static J\+Combo\+Box {\bf combo\+Asr\+Result}
+\item 
+static J\+Combo\+Box {\bf combo\+Algorithm}
+\item 
+static J\+Label {\bf lbl\+Dictionary\+Model}
+\item 
+static J\+Label {\bf lbl\+Language\+Model}
+\item 
+static J\+Label {\bf lbl\+Acoustic\+Model}
+\item 
+static J\+Label {\bf lbl\+Asr\+Choice}
+\item 
+static J\+Label {\bf lbl\+Algorithm\+Choice}
+\item 
+static String {\bf last\+Directory\+Visited} = \char`\"{}.\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!get\+Relative\+Path@{get\+Relative\+Path}}
+\index{get\+Relative\+Path@{get\+Relative\+Path}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{get\+Relative\+Path}]{\setlength{\rightskip}{0pt plus 5cm}static File project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+get\+Relative\+Path (
+\begin{DoxyParamCaption}
+\item[{File}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a236ae66315d16da8a17b82c9afb04b4b}
+Function returns a relative path of the file with respect to the current directory 
+\begin{DoxyParams}{Parameters}
+{\em file} & File for which the path is needed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a relative path 
+\end{DoxyReturn}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!set\+Chk\+All\+False@{set\+Chk\+All\+False}}
+\index{set\+Chk\+All\+False@{set\+Chk\+All\+False}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{set\+Chk\+All\+False}]{\setlength{\rightskip}{0pt plus 5cm}static void project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+set\+Chk\+All\+False (
+\begin{DoxyParamCaption}
+\item[{Item\+Event}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_af9162ce02571cda6d56895961cfe589f}
+Resets check button and evaluate button 
+\begin{DoxyParams}{Parameters}
+{\em e} & when the event retuns 2, the item is selected \\
+\hline
+\end{DoxyParams}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!set\+Default\+Color@{set\+Default\+Color}}
+\index{set\+Default\+Color@{set\+Default\+Color}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{set\+Default\+Color}]{\setlength{\rightskip}{0pt plus 5cm}static void project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+set\+Default\+Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_aeeebf6c05a90aeff887cd1f13a1b026f}
+Set colour to buttons \index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!set\+Selected\+Asr@{set\+Selected\+Asr}}
+\index{set\+Selected\+Asr@{set\+Selected\+Asr}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{set\+Selected\+Asr}]{\setlength{\rightskip}{0pt plus 5cm}static void project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+set\+Selected\+Asr (
+\begin{DoxyParamCaption}
+\item[{String}]{received}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_ae03378a39e12031c14ac99e338dc5c04}
+Returns selected asr system 
+\begin{DoxyParams}{Parameters}
+{\em received} & Sets the string to the selected asr system \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!acous\+Loaded\+Cmu@{acous\+Loaded\+Cmu}}
+\index{acous\+Loaded\+Cmu@{acous\+Loaded\+Cmu}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{acous\+Loaded\+Cmu}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+acous\+Loaded\+Cmu = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_aaf4052e0e7352d2ff4143cb3242940ca}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!acous\+Loaded\+Ispeech@{acous\+Loaded\+Ispeech}}
+\index{acous\+Loaded\+Ispeech@{acous\+Loaded\+Ispeech}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{acous\+Loaded\+Ispeech}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+acous\+Loaded\+Ispeech = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a099ba9ac5b719ca6479bbf6ec0647c62}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!acoustic\+Chooser@{acoustic\+Chooser}}
+\index{acoustic\+Chooser@{acoustic\+Chooser}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{acoustic\+Chooser}]{\setlength{\rightskip}{0pt plus 5cm}J\+File\+Chooser project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+acoustic\+Chooser\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a401a35e0d74d408c89435e49ed43191b}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!acoustic\+Choosertitle@{acoustic\+Choosertitle}}
+\index{acoustic\+Choosertitle@{acoustic\+Choosertitle}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{acoustic\+Choosertitle}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+acoustic\+Choosertitle = \char`\"{}Select the acoustic file...\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a1d43e3dda7edda3f0ff7cb8d12b4057e}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!algorithm\+Selected@{algorithm\+Selected}}
+\index{algorithm\+Selected@{algorithm\+Selected}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{algorithm\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+algorithm\+Selected = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a6f3473d8391169e77f2a2eb888231824}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!asr\+Selected\+Obj@{asr\+Selected\+Obj}}
+\index{asr\+Selected\+Obj@{asr\+Selected\+Obj}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{asr\+Selected\+Obj}]{\setlength{\rightskip}{0pt plus 5cm}Object project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+asr\+Selected\+Obj\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a51d6d37537f7499c10c1896ab49a4db6}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!asr\+Systems\+Selected@{asr\+Systems\+Selected}}
+\index{asr\+Systems\+Selected@{asr\+Systems\+Selected}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{asr\+Systems\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$String$>$ project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+asr\+Systems\+Selected = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a556de5dd42e2d26db376de903253bb40}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!btn\+Acoustic\+Model@{btn\+Acoustic\+Model}}
+\index{btn\+Acoustic\+Model@{btn\+Acoustic\+Model}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{btn\+Acoustic\+Model}]{\setlength{\rightskip}{0pt plus 5cm}J\+Button project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+btn\+Acoustic\+Model\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a5f0931d4ec3dfbcbbc6e563b93017cba}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!btn\+Check@{btn\+Check}}
+\index{btn\+Check@{btn\+Check}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{btn\+Check}]{\setlength{\rightskip}{0pt plus 5cm}J\+Button project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+btn\+Check\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_ac5a82fbe572d5d5aa0d429039054d34c}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!btn\+Dictionary\+Model@{btn\+Dictionary\+Model}}
+\index{btn\+Dictionary\+Model@{btn\+Dictionary\+Model}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{btn\+Dictionary\+Model}]{\setlength{\rightskip}{0pt plus 5cm}J\+Button project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+btn\+Dictionary\+Model\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a8a96f9f18ab6eda80a491d93c3d9d6ce}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!btn\+Evaluate@{btn\+Evaluate}}
+\index{btn\+Evaluate@{btn\+Evaluate}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{btn\+Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}J\+Button project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+btn\+Evaluate\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_add44e43b35c94280d0a8b4dea0e2197c}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!btn\+Instructions@{btn\+Instructions}}
+\index{btn\+Instructions@{btn\+Instructions}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{btn\+Instructions}]{\setlength{\rightskip}{0pt plus 5cm}J\+Button project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+btn\+Instructions\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_ab1415fb70cad6099ea3e10fd08b3e795}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!btn\+Language\+Model@{btn\+Language\+Model}}
+\index{btn\+Language\+Model@{btn\+Language\+Model}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{btn\+Language\+Model}]{\setlength{\rightskip}{0pt plus 5cm}J\+Button project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+btn\+Language\+Model\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_aa5a380d0e977b95e8454c2c68a555865}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!btn\+Save\+Result@{btn\+Save\+Result}}
+\index{btn\+Save\+Result@{btn\+Save\+Result}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{btn\+Save\+Result}]{\setlength{\rightskip}{0pt plus 5cm}J\+Button project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+btn\+Save\+Result\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a2841bbbe3c291ecdfbfce954e94a444c}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!check\+Bool@{check\+Bool}}
+\index{check\+Bool@{check\+Bool}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{check\+Bool}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+check\+Bool = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a5e6e2a1fa907dc34a6f542fd05cc2a0a}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!check\+Cmu@{check\+Cmu}}
+\index{check\+Cmu@{check\+Cmu}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{check\+Cmu}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+check\+Cmu = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a34ccbd3dcc36a320f2b32b8bd8aeebd7}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!check\+Ispeech@{check\+Ispeech}}
+\index{check\+Ispeech@{check\+Ispeech}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{check\+Ispeech}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+check\+Ispeech = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a98895f5b44edfd13443dccdce8cf29b4}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!chk\+A\+L\+L@{chk\+A\+L\+L}}
+\index{chk\+A\+L\+L@{chk\+A\+L\+L}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{chk\+A\+L\+L}]{\setlength{\rightskip}{0pt plus 5cm}J\+Check\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+chk\+A\+L\+L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a1098486f633510308762390ea0fb0283}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!chk\+M\+E\+R@{chk\+M\+E\+R}}
+\index{chk\+M\+E\+R@{chk\+M\+E\+R}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{chk\+M\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}J\+Check\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+chk\+M\+E\+R\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a0b90de55e80a51d7f13a6d64f2be33c0}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!chk\+Percent\+Del@{chk\+Percent\+Del}}
+\index{chk\+Percent\+Del@{chk\+Percent\+Del}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{chk\+Percent\+Del}]{\setlength{\rightskip}{0pt plus 5cm}J\+Check\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+chk\+Percent\+Del\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a93fe1b06b613ace236a118d96d7b63fc}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!chk\+Percent\+Hits@{chk\+Percent\+Hits}}
+\index{chk\+Percent\+Hits@{chk\+Percent\+Hits}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{chk\+Percent\+Hits}]{\setlength{\rightskip}{0pt plus 5cm}J\+Check\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+chk\+Percent\+Hits\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a36dc5ab60289cf9c941191fd975de9c5}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!chk\+Percent\+Ins@{chk\+Percent\+Ins}}
+\index{chk\+Percent\+Ins@{chk\+Percent\+Ins}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{chk\+Percent\+Ins}]{\setlength{\rightskip}{0pt plus 5cm}J\+Check\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+chk\+Percent\+Ins\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a0dac53d4572102b9c227ab46d0a4e724}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!chk\+Percent\+Subs@{chk\+Percent\+Subs}}
+\index{chk\+Percent\+Subs@{chk\+Percent\+Subs}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{chk\+Percent\+Subs}]{\setlength{\rightskip}{0pt plus 5cm}J\+Check\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+chk\+Percent\+Subs\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_adf9d509db487ff732c616543a781f85c}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!chk\+W\+E\+R@{chk\+W\+E\+R}}
+\index{chk\+W\+E\+R@{chk\+W\+E\+R}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{chk\+W\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}J\+Check\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+chk\+W\+E\+R\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a39c35ec25744b9cc2d7c18f6bbfdfd6c}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!chk\+W\+I\+L@{chk\+W\+I\+L}}
+\index{chk\+W\+I\+L@{chk\+W\+I\+L}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{chk\+W\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}J\+Check\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+chk\+W\+I\+L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_ad798b511bfa9e6b2dc4f2802845dc205}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!combo\+Algorithm@{combo\+Algorithm}}
+\index{combo\+Algorithm@{combo\+Algorithm}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{combo\+Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}J\+Combo\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+combo\+Algorithm\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a71bc8646178991e0897487b4508fc5de}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!combo\+Asr\+Result@{combo\+Asr\+Result}}
+\index{combo\+Asr\+Result@{combo\+Asr\+Result}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{combo\+Asr\+Result}]{\setlength{\rightskip}{0pt plus 5cm}J\+Combo\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+combo\+Asr\+Result\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_aa0bf44ad1509893f6adb0e80e1edc41c}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!combo\+Asr\+Select@{combo\+Asr\+Select}}
+\index{combo\+Asr\+Select@{combo\+Asr\+Select}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{combo\+Asr\+Select}]{\setlength{\rightskip}{0pt plus 5cm}J\+Combo\+Box project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+combo\+Asr\+Select\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_aa9a1c95c12c6d0fc176bbb680f608440}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!current\+Asr\+Selected@{current\+Asr\+Selected}}
+\index{current\+Asr\+Selected@{current\+Asr\+Selected}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{current\+Asr\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+current\+Asr\+Selected = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_ae1d8521e87f8ac6dbac882e0af623fff}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!dictionary\+Chooser@{dictionary\+Chooser}}
+\index{dictionary\+Chooser@{dictionary\+Chooser}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{dictionary\+Chooser}]{\setlength{\rightskip}{0pt plus 5cm}J\+File\+Chooser project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+dictionary\+Chooser\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_adb89ae9c6d86da2583523f7ddae5c430}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!dictionary\+Choosertitle@{dictionary\+Choosertitle}}
+\index{dictionary\+Choosertitle@{dictionary\+Choosertitle}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{dictionary\+Choosertitle}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+dictionary\+Choosertitle = \char`\"{}Select the dictionary file...\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a6ec8a844cea722f8024cb07f1783e0ff}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!dict\+Loaded\+Cmu@{dict\+Loaded\+Cmu}}
+\index{dict\+Loaded\+Cmu@{dict\+Loaded\+Cmu}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{dict\+Loaded\+Cmu}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+dict\+Loaded\+Cmu = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a5a47f2fad13c6679a58a14acf4300e2f}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!dict\+Loaded\+Ispeech@{dict\+Loaded\+Ispeech}}
+\index{dict\+Loaded\+Ispeech@{dict\+Loaded\+Ispeech}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{dict\+Loaded\+Ispeech}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+dict\+Loaded\+Ispeech = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a878ac65daf5fc5bbb40c4a75a046cc81}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!lang\+Loaded\+Cmu@{lang\+Loaded\+Cmu}}
+\index{lang\+Loaded\+Cmu@{lang\+Loaded\+Cmu}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{lang\+Loaded\+Cmu}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+lang\+Loaded\+Cmu = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a8f67d606975574fd733f540826e3ff66}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!lang\+Loaded\+Ispeech@{lang\+Loaded\+Ispeech}}
+\index{lang\+Loaded\+Ispeech@{lang\+Loaded\+Ispeech}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{lang\+Loaded\+Ispeech}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+lang\+Loaded\+Ispeech = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a5781d5eee99352f4cba7f62f18efc1ad}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!language\+Chooser@{language\+Chooser}}
+\index{language\+Chooser@{language\+Chooser}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{language\+Chooser}]{\setlength{\rightskip}{0pt plus 5cm}J\+File\+Chooser project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+language\+Chooser\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a4acbdd7593142ad5c5cd91dfa1d1e822}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!language\+Choosertitle@{language\+Choosertitle}}
+\index{language\+Choosertitle@{language\+Choosertitle}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{language\+Choosertitle}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+language\+Choosertitle = \char`\"{}Select the language file...\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_ac6c35c82a3b62bd4f5634dc567627f9c}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!last\+Directory\+Visited@{last\+Directory\+Visited}}
+\index{last\+Directory\+Visited@{last\+Directory\+Visited}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{last\+Directory\+Visited}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+last\+Directory\+Visited = \char`\"{}.\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a881281777234b7107b79bb7e02ded85d}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!lbl\+Acoustic\+Model@{lbl\+Acoustic\+Model}}
+\index{lbl\+Acoustic\+Model@{lbl\+Acoustic\+Model}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{lbl\+Acoustic\+Model}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+lbl\+Acoustic\+Model\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_ad9ae6d99893483c53f1102a884c198ed}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!lbl\+Algorithm\+Choice@{lbl\+Algorithm\+Choice}}
+\index{lbl\+Algorithm\+Choice@{lbl\+Algorithm\+Choice}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{lbl\+Algorithm\+Choice}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+lbl\+Algorithm\+Choice\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a4f69a388b52a5fc67bda98b14a237d8b}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!lbl\+Asr\+Choice@{lbl\+Asr\+Choice}}
+\index{lbl\+Asr\+Choice@{lbl\+Asr\+Choice}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{lbl\+Asr\+Choice}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+lbl\+Asr\+Choice\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a0a2c62fd64d024a1aafd128716cd6e6a}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!lbl\+Dictionary\+Model@{lbl\+Dictionary\+Model}}
+\index{lbl\+Dictionary\+Model@{lbl\+Dictionary\+Model}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{lbl\+Dictionary\+Model}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+lbl\+Dictionary\+Model\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a1da5e2271530dfff21500db403cbcdf5}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!lbl\+Language\+Model@{lbl\+Language\+Model}}
+\index{lbl\+Language\+Model@{lbl\+Language\+Model}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{lbl\+Language\+Model}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+lbl\+Language\+Model\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a98d07c6b0e5fca7d84384ff71e714825}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!lbl\+Model1@{lbl\+Model1}}
+\index{lbl\+Model1@{lbl\+Model1}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{lbl\+Model1}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+lbl\+Model1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_afcc1509388b963e021156ad044345e61}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!lbl\+Speech\+Corpus\+Path@{lbl\+Speech\+Corpus\+Path}}
+\index{lbl\+Speech\+Corpus\+Path@{lbl\+Speech\+Corpus\+Path}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{lbl\+Speech\+Corpus\+Path}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+lbl\+Speech\+Corpus\+Path\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a0a0f6fc44a77fd7ea56bd25bf6638ace}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!models\+Needed@{models\+Needed}}
+\index{models\+Needed@{models\+Needed}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{models\+Needed}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+models\+Needed = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a9cebdbdfccfff6fcde1d28c34453acd6}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!performance\+List\+Checked@{performance\+List\+Checked}}
+\index{performance\+List\+Checked@{performance\+List\+Checked}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{performance\+List\+Checked}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$J\+Check\+Box$>$ project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+performance\+List\+Checked = new Array\+List$<$J\+Check\+Box$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a9acf7f44dfdbe624509353f83fd512b7}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!performance\+List\+Selected@{performance\+List\+Selected}}
+\index{performance\+List\+Selected@{performance\+List\+Selected}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{performance\+List\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$String$>$ project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+performance\+List\+Selected = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_aadc7e3631c6025f1826beb81638189bf}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!speech\+Corpus\+Chooser@{speech\+Corpus\+Chooser}}
+\index{speech\+Corpus\+Chooser@{speech\+Corpus\+Chooser}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{speech\+Corpus\+Chooser}]{\setlength{\rightskip}{0pt plus 5cm}J\+File\+Chooser project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+speech\+Corpus\+Chooser\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a8f60e183d58d7c9132634756fde1a81f}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!speech\+Corpus\+Choosertitle@{speech\+Corpus\+Choosertitle}}
+\index{speech\+Corpus\+Choosertitle@{speech\+Corpus\+Choosertitle}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{speech\+Corpus\+Choosertitle}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+speech\+Corpus\+Choosertitle = \char`\"{}Select the path of Speech corpus...\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a528259219703e2213d4ccb203bfd04f1}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!speech\+Corpus\+Loaded@{speech\+Corpus\+Loaded}}
+\index{speech\+Corpus\+Loaded@{speech\+Corpus\+Loaded}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{speech\+Corpus\+Loaded}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+speech\+Corpus\+Loaded = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a7a4b6e36b7a55255f56ae0ff2a173241}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!speech\+Corpus\+Path\+Result@{speech\+Corpus\+Path\+Result}}
+\index{speech\+Corpus\+Path\+Result@{speech\+Corpus\+Path\+Result}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{speech\+Corpus\+Path\+Result}]{\setlength{\rightskip}{0pt plus 5cm}File project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+speech\+Corpus\+Path\+Result = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a67d435afdbd332b9d62c8229f814ab68}
+\index{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}!speech\+Properties\+List@{speech\+Properties\+List}}
+\index{speech\+Properties\+List@{speech\+Properties\+List}!project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Method1\+Frame}}
+\subsubsection[{speech\+Properties\+List}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<${\bf Ui\+Asr\+Properties}$>$ project.\+speech.\+user\+Interface.\+Ui\+Method1\+Frame.\+speech\+Properties\+List = new Array\+List$<${\bf Ui\+Asr\+Properties}$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_method1_frame_a73ea7e20e55c124b4d6af8b977aedb6e}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+project/speech/user\+Interface/{\bf Ui\+Method1\+Frame.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+HVite -A -D -T 1 -l * -o SWT -b silence -C /data/svn-mirror/Main/Trunk/Scripts/AcousticModel_scripts/HTK/AMCreate_scripts/input_files/config -H ./interim_files/hmm7/macros -H ./interim_files/hmm7/hmmdefs -i ./interim_files/aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -a -I ./interim_files/words.mlf -S ./interim_files/train.scp ./interim_files/dict1 ./interim_files/monophones1 
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+#                 NUMCEPS                       12
+#                 CEPLIFTER                     22
+#                 NUMCHANS                      26
+#                 PREEMCOEF               0.970000
+#                 USEHAMMING                  TRUE
+#                 WINDOWSIZE         250000.000000
+#                 SAVEWITHCRC                 TRUE
+#                 SAVECOMPRESSED              TRUE
+#                 TARGETRATE         100000.000000
+#                 TARGETKIND          MFCC_0_D_N_Z
+
+Read 37 physical / 37 logical HMMs
+Label file will be used to align each file
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20090227-051345-1235711589.1542/mfc/vf6-11.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+silence IT DROWNED ALL SOUND THAT BRUTE AGONY AND DEATH MAY HAVE MADE silence  ==  [715 frames] -54.9757 [Ac=-39307.6 LM=0.0] (Act=11.8)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20090227-051345-1235711589.1542/mfc/vf6-12.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+silence FRESH CASES STILL ABLE TO WALK THEY CLUSTERED ABOUT THE SPOKESMAN silence  ==  [665 frames] -56.1909 [Ac=-37367.0 LM=0.0] (Act=10.8)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20090227-051345-1235711589.1542/mfc/vf6-13.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+silence BETWEEN HIM AND THE BEACH WAS THE CANE-GRASS FENCE OF THE COMPOUND silence  ==  [573 frames] -56.9843 [Ac=-32652.0 LM=0.0] (Act=11.5)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20090227-051345-1235711589.1542/mfc/vf6-14.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+silence BESIDES HE WAS PAID ONE CASE OF TOBACCO PER HEAD silence  ==  [555 frames] -55.0025 [Ac=-30526.4 LM=0.0] (Act=12.5)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20090227-051345-1235711589.1542/mfc/vf6-15.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+silence THEY DIE OUT OF SPITE silence  ==  [359 frames] -54.2095 [Ac=-19461.2 LM=0.0] (Act=10.5)
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+                  NUMCEPS                       12
+                  CEPLIFTER                     22
+                  NUMCHANS                      26
+                  PREEMCOEF               0.970000
+                  USEHAMMING                  TRUE
+                  WINDOWSIZE         250000.000000
+                  SAVEWITHCRC                 TRUE
+                  SAVECOMPRESSED              TRUE
+                  TARGETRATE         100000.000000
+                  TARGETKIND          MFCC_0_D_N_Z
+

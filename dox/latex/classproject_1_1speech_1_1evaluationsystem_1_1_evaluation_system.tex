@@ -1,0 +1,271 @@
+\section{project.\+speech.\+evaluationsystem.\+Evaluation\+System Class Reference}
+\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system}\index{project.\+speech.\+evaluationsystem.\+Evaluation\+System@{project.\+speech.\+evaluationsystem.\+Evaluation\+System}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Array\+List$<$ File $>$ {\bf read\+Directory} (File current\+Path)
+\item 
+static void {\bf text\+Evaluation} (File temp\+Reference\+File, File temp\+Hypothesis\+File, Array\+List$<$ String $>$ performance\+List, String algorithm\+Selected)  throws I\+O\+Exception 
+\item 
+static void {\bf write\+Result\+File} (File file\+To\+Write\+Result, Array\+List$<$ String $>$ temp\+Selected\+Performance\+List, {\bf Evaluator\+Result} eresult, String temp\+Hypothesis\+File\+Name, File sub\+Speech\+Folder)  throws I\+O\+Exception
+\item 
+static void {\bf recognise\+And\+Evaluate} (File speech\+Database\+Directory, Array\+List$<$ {\bf Ui\+Asr\+Properties} $>$ asr\+Properties\+Obj, Array\+List$<$ String $>$ selected\+Performance\+List, Array\+List$<$ String $>$ selected\+Asr\+List, String algorithm\+Selected)  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Array\+List$<$ File $>$ {\bf speech\+Database\+Folders} = new Array\+List$<$File$>$()
+\item 
+static Array\+List$<$ File $>$ {\bf recognition\+Output\+Folders} = new Array\+List$<$File$>$()
+\item 
+static Array\+List$<$ File $>$ {\bf reference\+Files\+List} = new Array\+List$<$File$>$()
+\item 
+static File {\bf current\+Speech\+Files}
+\item 
+static File {\bf reference\+File}
+\item 
+static File {\bf hypothesis\+File}
+\item 
+static File {\bf time\+Taken\+File}
+\item 
+static File {\bf cmu\+Dictionary\+File}
+\item 
+static String {\bf cmu\+Acoustic\+String}
+\item 
+static File {\bf cmu\+Language\+File}
+\item 
+static String {\bf hypothesis\+File\+Name}
+\item 
+static String {\bf time\+Taken\+Count}
+\item 
+static String {\bf asr\+Used}
+\item 
+static int {\bf H}
+\item 
+static int {\bf S}
+\item 
+static int {\bf D}
+\item 
+static int {\bf I}
+\item 
+static int {\bf N}
+\item 
+static double {\bf percent\+Hits}
+\item 
+static double {\bf percent\+Substitutions}
+\item 
+static double {\bf percent\+Deletions}
+\item 
+static double {\bf percent\+Insertions}
+\item 
+static double {\bf wer}
+\item 
+static double {\bf mer}
+\item 
+static double {\bf wil}
+\item 
+static boolean {\bf evaluation\+Result\+File\+Opened} = false
+\item 
+static boolean {\bf is\+Evalution\+Directory\+Occured} = false
+\item 
+static boolean {\bf asr1\+Status} = false
+\item 
+static boolean {\bf asr2\+Status} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!read\+Directory@{read\+Directory}}
+\index{read\+Directory@{read\+Directory}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{read\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}static Array\+List$<$File$>$ project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+read\+Directory (
+\begin{DoxyParamCaption}
+\item[{File}]{current\+Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_aaae715bc2fca5fa37798f0a677e64ba2}
+This functions receives a path and returns the files or folders in the path 
+\begin{DoxyParams}{Parameters}
+{\em current\+Path} & Path of current folder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of files or folders present inside the current\+Path 
+\end{DoxyReturn}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!recognise\+And\+Evaluate@{recognise\+And\+Evaluate}}
+\index{recognise\+And\+Evaluate@{recognise\+And\+Evaluate}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{recognise\+And\+Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}static void project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+recognise\+And\+Evaluate (
+\begin{DoxyParamCaption}
+\item[{File}]{speech\+Database\+Directory, }
+\item[{Array\+List$<$ {\bf Ui\+Asr\+Properties} $>$}]{asr\+Properties\+Obj, }
+\item[{Array\+List$<$ String $>$}]{selected\+Performance\+List, }
+\item[{Array\+List$<$ String $>$}]{selected\+Asr\+List, }
+\item[{String}]{algorithm\+Selected}
+\end{DoxyParamCaption}
+) throws Exception\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a2a5dfddc5e18caf53a3499fd612b742f}
+
+\begin{DoxyParams}{Parameters}
+{\em speech\+Database\+Directory} & Directory where the speech folders are stored \\
+\hline
+{\em asr\+Properties\+Obj} & List containing the paths of dictionary, language and acoustic files \\
+\hline
+{\em selected\+Performance\+List} & List of performance metrics needed as the result \\
+\hline
+{\em selected\+Asr\+List} & list containing the speech recognition engines selected for evaluation \\
+\hline
+{\em algorithm\+Selected} & Alignment algorithm selected \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & when the result directory could not be deleted \\
+\hline
+\end{DoxyExceptions}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!text\+Evaluation@{text\+Evaluation}}
+\index{text\+Evaluation@{text\+Evaluation}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{text\+Evaluation}]{\setlength{\rightskip}{0pt plus 5cm}static void project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+text\+Evaluation (
+\begin{DoxyParamCaption}
+\item[{File}]{temp\+Reference\+File, }
+\item[{File}]{temp\+Hypothesis\+File, }
+\item[{Array\+List$<$ String $>$}]{performance\+List, }
+\item[{String}]{algorithm\+Selected}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a172dd41dd0f7e3074fcc2fbdabeeb8fa}
+This function is called when the second model is chosen, which only needs reference text file and hypothesis text file to make the alignment process and determine the performance measures 
+\begin{DoxyParams}{Parameters}
+{\em temp\+Reference\+File} & Reference text file for evaluation \\
+\hline
+{\em temp\+Hypothesis\+File} & Hypothesis text file to be evaluated \\
+\hline
+{\em performance\+List} & List of performance metrics needed as the result \\
+\hline
+{\em algorithm\+Selected} & alignment algorithm selected \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if the result directory could not be deleted \\
+\hline
+\end{DoxyExceptions}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!write\+Result\+File@{write\+Result\+File}}
+\index{write\+Result\+File@{write\+Result\+File}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{write\+Result\+File}]{\setlength{\rightskip}{0pt plus 5cm}static void project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+write\+Result\+File (
+\begin{DoxyParamCaption}
+\item[{File}]{file\+To\+Write\+Result, }
+\item[{Array\+List$<$ String $>$}]{temp\+Selected\+Performance\+List, }
+\item[{{\bf Evaluator\+Result}}]{eresult, }
+\item[{String}]{temp\+Hypothesis\+File\+Name, }
+\item[{File}]{sub\+Speech\+Folder}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a67e234cf7ded6396321404adf332fa68}
+This function writes the results generated in a file 
+\begin{DoxyParams}{Parameters}
+{\em file\+To\+Write\+Result} & File where the result should be written \\
+\hline
+{\em temp\+Selected\+Performance\+List} & List of performance metrics needed as the result \\
+\hline
+{\em eresult} & evaluation result containing hits, substitutions, deletions, insertions and number of words \\
+\hline
+{\em temp\+Hypothesis\+File\+Name} & Name of the hypothesis text file written by the speech recognition engine(contains name of the speech recognition system) \\
+\hline
+{\em sub\+Speech\+Folder} & Name of the folder, where the reference and hypothesis text are stored \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & when the file cannot be written \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!asr1\+Status@{asr1\+Status}}
+\index{asr1\+Status@{asr1\+Status}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{asr1\+Status}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+asr1\+Status = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a4d453984ce988f95b4f86b0ea22bfbad}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!asr2\+Status@{asr2\+Status}}
+\index{asr2\+Status@{asr2\+Status}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{asr2\+Status}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+asr2\+Status = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_adef9e24a7166f2b890112ae65533f075}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!asr\+Used@{asr\+Used}}
+\index{asr\+Used@{asr\+Used}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{asr\+Used}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+asr\+Used\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a26caac13eb994f620f63a74dc586c4df}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!cmu\+Acoustic\+String@{cmu\+Acoustic\+String}}
+\index{cmu\+Acoustic\+String@{cmu\+Acoustic\+String}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{cmu\+Acoustic\+String}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+cmu\+Acoustic\+String\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_aef12c2784046867caeb388406878a5bd}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!cmu\+Dictionary\+File@{cmu\+Dictionary\+File}}
+\index{cmu\+Dictionary\+File@{cmu\+Dictionary\+File}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{cmu\+Dictionary\+File}]{\setlength{\rightskip}{0pt plus 5cm}File project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+cmu\+Dictionary\+File\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_aeb8eb8482defa0245a8127e829bdf97e}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!cmu\+Language\+File@{cmu\+Language\+File}}
+\index{cmu\+Language\+File@{cmu\+Language\+File}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{cmu\+Language\+File}]{\setlength{\rightskip}{0pt plus 5cm}File project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+cmu\+Language\+File\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a8a8b68b5b9d1a73337f9f1e13ce07d1b}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!current\+Speech\+Files@{current\+Speech\+Files}}
+\index{current\+Speech\+Files@{current\+Speech\+Files}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{current\+Speech\+Files}]{\setlength{\rightskip}{0pt plus 5cm}File project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+current\+Speech\+Files\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a799c114eaf3c104418c62ceada287763}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!D@{D}}
+\index{D@{D}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{D}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+D\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a319882b5c20b02604ad8e2b67401b5fc}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!evaluation\+Result\+File\+Opened@{evaluation\+Result\+File\+Opened}}
+\index{evaluation\+Result\+File\+Opened@{evaluation\+Result\+File\+Opened}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{evaluation\+Result\+File\+Opened}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+evaluation\+Result\+File\+Opened = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a5675aa2deffb523f7e29d83ceb9479d5}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!H@{H}}
+\index{H@{H}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{H}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+H\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_acb77e10f87a0874bcb7ae4961b58bc20}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!hypothesis\+File@{hypothesis\+File}}
+\index{hypothesis\+File@{hypothesis\+File}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{hypothesis\+File}]{\setlength{\rightskip}{0pt plus 5cm}File project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+hypothesis\+File\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a0018e6d5657144f108f0b442016410cd}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!hypothesis\+File\+Name@{hypothesis\+File\+Name}}
+\index{hypothesis\+File\+Name@{hypothesis\+File\+Name}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{hypothesis\+File\+Name}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+hypothesis\+File\+Name\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a552182596e97833a25bb5ccaacde1798}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!I@{I}}
+\index{I@{I}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{I}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+I\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_adf7f77a61b2b40cbc730f75cee13de48}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!is\+Evalution\+Directory\+Occured@{is\+Evalution\+Directory\+Occured}}
+\index{is\+Evalution\+Directory\+Occured@{is\+Evalution\+Directory\+Occured}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{is\+Evalution\+Directory\+Occured}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+is\+Evalution\+Directory\+Occured = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a42f7b13f8455e1666206a4f5c0d5bbd9}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!mer@{mer}}
+\index{mer@{mer}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{mer}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+mer\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a81d79c34714b54dadfbfdb4749b1a8dd}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!N@{N}}
+\index{N@{N}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{N}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+N\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a4993160be4b5107cf915579ac0b17891}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!percent\+Deletions@{percent\+Deletions}}
+\index{percent\+Deletions@{percent\+Deletions}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{percent\+Deletions}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+percent\+Deletions\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a4bf558aad63763241b0be092648d68df}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!percent\+Hits@{percent\+Hits}}
+\index{percent\+Hits@{percent\+Hits}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{percent\+Hits}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+percent\+Hits\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a35ed5dfdfa74334ef52a49112766dc18}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!percent\+Insertions@{percent\+Insertions}}
+\index{percent\+Insertions@{percent\+Insertions}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{percent\+Insertions}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+percent\+Insertions\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_ac7410a726b46774a49749c708a92e66f}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!percent\+Substitutions@{percent\+Substitutions}}
+\index{percent\+Substitutions@{percent\+Substitutions}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{percent\+Substitutions}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+percent\+Substitutions\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a9ac08b306bc851ec21e5dab85a440418}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!recognition\+Output\+Folders@{recognition\+Output\+Folders}}
+\index{recognition\+Output\+Folders@{recognition\+Output\+Folders}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{recognition\+Output\+Folders}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$File$>$ project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+recognition\+Output\+Folders = new Array\+List$<$File$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_ac4ff09604dd683ad4c43c2693d19aea9}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!reference\+File@{reference\+File}}
+\index{reference\+File@{reference\+File}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{reference\+File}]{\setlength{\rightskip}{0pt plus 5cm}File project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+reference\+File\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_aebbaa88ec43243e5c4c0c496f8672984}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!reference\+Files\+List@{reference\+Files\+List}}
+\index{reference\+Files\+List@{reference\+Files\+List}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{reference\+Files\+List}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$File$>$ project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+reference\+Files\+List = new Array\+List$<$File$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_add0c1bc2f787fc8fdc6778dea6239be6}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!S@{S}}
+\index{S@{S}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{S}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+S\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_acd23e570e3851f632593e187a85c289d}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!speech\+Database\+Folders@{speech\+Database\+Folders}}
+\index{speech\+Database\+Folders@{speech\+Database\+Folders}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{speech\+Database\+Folders}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$File$>$ project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+speech\+Database\+Folders = new Array\+List$<$File$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_ae8d2cafb0a914ef1f3eeb9e83a095a4b}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!time\+Taken\+Count@{time\+Taken\+Count}}
+\index{time\+Taken\+Count@{time\+Taken\+Count}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{time\+Taken\+Count}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+time\+Taken\+Count\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a758a0ea7cdae028f4014095cf9b81043}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!time\+Taken\+File@{time\+Taken\+File}}
+\index{time\+Taken\+File@{time\+Taken\+File}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{time\+Taken\+File}]{\setlength{\rightskip}{0pt plus 5cm}File project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+time\+Taken\+File\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a50fb70d5f996704fc8d75d3f4574145d}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!wer@{wer}}
+\index{wer@{wer}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{wer}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+wer\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_a90b99fea095474bfb0ba8e39eb14da1b}
+\index{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}!wil@{wil}}
+\index{wil@{wil}!project\+::speech\+::evaluationsystem\+::\+Evaluation\+System@{project\+::speech\+::evaluationsystem\+::\+Evaluation\+System}}
+\subsubsection[{wil}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+evaluationsystem.\+Evaluation\+System.\+wil\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluationsystem_1_1_evaluation_system_ac98b7bfe554c1c57b7a0abca5bbbd2ee}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+project/speech/evaluationsystem/{\bf Evaluation\+System.\+java}\end{DoxyCompactItemize}

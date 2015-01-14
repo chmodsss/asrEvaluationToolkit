@@ -1,0 +1,47 @@
+\section{project.\+speech.\+reader\+And\+Writer.\+File\+Scripter Class Reference}
+\label{classproject_1_1speech_1_1reader_and_writer_1_1_file_scripter}\index{project.\+speech.\+reader\+And\+Writer.\+File\+Scripter@{project.\+speech.\+reader\+And\+Writer.\+File\+Scripter}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bf writer} (String asr\+Name, File database\+Name, File reference\+File, Array\+List$<$ String $>$ file\+Name\+List, Array\+List$<$ String $>$ sentence\+Detected\+List, double time\+Difference)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{project\+::speech\+::reader\+And\+Writer\+::\+File\+Scripter@{project\+::speech\+::reader\+And\+Writer\+::\+File\+Scripter}!writer@{writer}}
+\index{writer@{writer}!project\+::speech\+::reader\+And\+Writer\+::\+File\+Scripter@{project\+::speech\+::reader\+And\+Writer\+::\+File\+Scripter}}
+\subsubsection[{writer}]{\setlength{\rightskip}{0pt plus 5cm}static void project.\+speech.\+reader\+And\+Writer.\+File\+Scripter.\+writer (
+\begin{DoxyParamCaption}
+\item[{String}]{asr\+Name, }
+\item[{File}]{database\+Name, }
+\item[{File}]{reference\+File, }
+\item[{Array\+List$<$ String $>$}]{file\+Name\+List, }
+\item[{Array\+List$<$ String $>$}]{sentence\+Detected\+List, }
+\item[{double}]{time\+Difference}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1reader_and_writer_1_1_file_scripter_a41e17c95c8990c0259cc1b1fb9eaf902}
+This function writes the output obtained by the speech recognizer in a file 
+\begin{DoxyParams}{Parameters}
+{\em asr\+Name} & Name of the speech recognition engine used \\
+\hline
+{\em database\+Name} & Name of the speech folder used for recognition \\
+\hline
+{\em reference\+File} & Reference file available in the speech database for evaluation \\
+\hline
+{\em file\+Name\+List} & List consisting of the names of all speech files present in the folder, inserted as the first word in every sentence \\
+\hline
+{\em sentence\+Detected\+List} & List containing the sentences recognized by the speech recognition engine \\
+\hline
+{\em time\+Difference} & time consumed by the speech engine for recognition \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+project/speech/reader\+And\+Writer/{\bf File\+Scripter.\+java}\end{DoxyCompactItemize}

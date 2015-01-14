@@ -1,0 +1,213 @@
+\section{project.\+speech.\+evaluator.\+Evaluation\+Aligner Class Reference}
+\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner}\index{project.\+speech.\+evaluator.\+Evaluation\+Aligner@{project.\+speech.\+evaluator.\+Evaluation\+Aligner}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Evaluation\+Aligner} (File reference\+File, File hypothesis\+File, File time\+File)
+\item 
+{\bf Evaluation\+Aligner} (File reference\+File, File hypothesis\+File)
+\item 
+{\bf Evaluator\+Result} {\bf evaluate\+With\+Time} (File {\bf sub\+Speech\+Folder}, String asr\+Used)  throws I\+O\+Exception 
+\item 
+{\bf Evaluator\+Result} {\bf evaluate\+No\+Time} ()  throws I\+O\+Exception 
+\item 
+void {\bf evaluate} ()  throws I\+O\+Exception
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf num\+Hits\+Total} = 0
+\item 
+int {\bf num\+Sub\+Total} = 0
+\item 
+int {\bf num\+Del\+Total} = 0
+\item 
+int {\bf num\+Ins\+Total} = 0
+\item 
+int {\bf num\+Hits} = 0
+\item 
+int {\bf num\+Sub} = 0
+\item 
+int {\bf num\+Del} = 0
+\item 
+int {\bf num\+Ins} = 0
+\item 
+int {\bf number\+Of\+Words} = 0
+\item 
+int {\bf number\+Of\+Words\+Total} = 0
+\item 
+int {\bf mark\+Limit} = 1000
+\item 
+String {\bf time\+Span}
+\item 
+String {\bf model1} = \char`\"{}model1\char`\"{}
+\item 
+String {\bf model2} = \char`\"{}model2\char`\"{}
+\item 
+String {\bf model}
+\item 
+File {\bf alignment\+File}
+\item 
+String {\bf asr\+U\+Sed}
+\item 
+File {\bf sub\+Speech\+Folder}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String {\bf empty} = \char`\"{}$\ast$$\ast$$\ast$$\ast$$\ast$\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!Evaluation\+Aligner@{Evaluation\+Aligner}}
+\index{Evaluation\+Aligner@{Evaluation\+Aligner}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{Evaluation\+Aligner}]{\setlength{\rightskip}{0pt plus 5cm}project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+Evaluation\+Aligner (
+\begin{DoxyParamCaption}
+\item[{File}]{reference\+File, }
+\item[{File}]{hypothesis\+File, }
+\item[{File}]{time\+File}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_acb8dc143a5a2dc13d5a3f8aa830bec9e}
+This constructor assigns the following files and sets the model to be recognise and evaluate(model1) 
+\begin{DoxyParams}{Parameters}
+{\em reference\+File} & Reference text file for evaluation \\
+\hline
+{\em hypothesis\+File} & Hypothesis text file to be evaluated \\
+\hline
+{\em time\+File} & Time file contains the duration in seconds needed to recognize the whole folder \\
+\hline
+\end{DoxyParams}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!Evaluation\+Aligner@{Evaluation\+Aligner}}
+\index{Evaluation\+Aligner@{Evaluation\+Aligner}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{Evaluation\+Aligner}]{\setlength{\rightskip}{0pt plus 5cm}project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+Evaluation\+Aligner (
+\begin{DoxyParamCaption}
+\item[{File}]{reference\+File, }
+\item[{File}]{hypothesis\+File}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_acfe521d3afc58d448becbcc5c2a519f9}
+This constructor assigns the following files and sets the model to be Performance calculator (model2) 
+\begin{DoxyParams}{Parameters}
+{\em reference\+File} & Reference text file for evaluation \\
+\hline
+{\em hypothesis\+File} & Hypothesis text file to be evaluated \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}void project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+evaluate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a43ca9cc71f052417a654af820580693e}
+This function aligns the reference text with the recognition output(hypothesized text) and writes the output in an alignment file 
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & when a file could not be read \\
+\hline
+\end{DoxyExceptions}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!evaluate\+No\+Time@{evaluate\+No\+Time}}
+\index{evaluate\+No\+Time@{evaluate\+No\+Time}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{evaluate\+No\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Evaluator\+Result} project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+evaluate\+No\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_ac1b2093a4f9c3e4739922a8b7e2542f4}
+This function is used by performance calculator -\/ model2, and it calls evaluate function \begin{DoxyReturn}{Returns}
+Object of \doxyref{Evaluator\+Result}{p.}{classproject_1_1speech_1_1evaluator_1_1_evaluator_result} containing number of hits, substitutions, deletions, insertions and reference words 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!evaluate\+With\+Time@{evaluate\+With\+Time}}
+\index{evaluate\+With\+Time@{evaluate\+With\+Time}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{evaluate\+With\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Evaluator\+Result} project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+evaluate\+With\+Time (
+\begin{DoxyParamCaption}
+\item[{File}]{sub\+Speech\+Folder, }
+\item[{String}]{asr\+Used}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a3ae9e2f5956e730ff84923e337d66f9b}
+This function is used by recognise and evaluate -\/ model1, and it calls evaluate function 
+\begin{DoxyParams}{Parameters}
+{\em sub\+Speech\+Folder} & Name of the directory containing the speech files and transcription file \\
+\hline
+{\em asr\+Used} & Name of the speech recognition engine used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object of \doxyref{Evaluator\+Result}{p.}{classproject_1_1speech_1_1evaluator_1_1_evaluator_result} containing number of hits, substitutions, deletions, insertions, reference words and time consumed 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!alignment\+File@{alignment\+File}}
+\index{alignment\+File@{alignment\+File}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{alignment\+File}]{\setlength{\rightskip}{0pt plus 5cm}File project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+alignment\+File\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a95d132d92805ab864fee1a0cb6189776}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!asr\+U\+Sed@{asr\+U\+Sed}}
+\index{asr\+U\+Sed@{asr\+U\+Sed}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{asr\+U\+Sed}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+asr\+U\+Sed\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_aa0aa4327bfb33fe6a6a7a9b9b0503e15}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!empty@{empty}}
+\index{empty@{empty}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+empty = \char`\"{}$\ast$$\ast$$\ast$$\ast$$\ast$\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a9a89f83fd01eaed4e395e59ac1de5a10}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!mark\+Limit@{mark\+Limit}}
+\index{mark\+Limit@{mark\+Limit}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{mark\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+mark\+Limit = 1000\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a96cfef1cd6fbeaa6a725b0f975936e75}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!model@{model}}
+\index{model@{model}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{model}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+model\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a2c68cc1e42851f05c254d2629c054ef9}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!model1@{model1}}
+\index{model1@{model1}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{model1}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+model1 = \char`\"{}model1\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_ae8a4497f2558c4c3bc8f8cb9b2eb0310}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!model2@{model2}}
+\index{model2@{model2}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{model2}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+model2 = \char`\"{}model2\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a6db13c2cd7ed2092cd3118da34b659fb}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!number\+Of\+Words@{number\+Of\+Words}}
+\index{number\+Of\+Words@{number\+Of\+Words}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{number\+Of\+Words}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+number\+Of\+Words = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a0aced9453509bf300040edd839a6aa1f}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!number\+Of\+Words\+Total@{number\+Of\+Words\+Total}}
+\index{number\+Of\+Words\+Total@{number\+Of\+Words\+Total}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{number\+Of\+Words\+Total}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+number\+Of\+Words\+Total = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a609449ba2afa1c103d6c2d4f8746ab49}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!num\+Del@{num\+Del}}
+\index{num\+Del@{num\+Del}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{num\+Del}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+num\+Del = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a07a5c39c149f39c34990a9d8283c0058}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!num\+Del\+Total@{num\+Del\+Total}}
+\index{num\+Del\+Total@{num\+Del\+Total}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{num\+Del\+Total}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+num\+Del\+Total = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_aacea48d20d81ae6f82395b88d94929f4}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!num\+Hits@{num\+Hits}}
+\index{num\+Hits@{num\+Hits}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{num\+Hits}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+num\+Hits = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_aea058a4da05e3075d39a0837d3ee2070}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!num\+Hits\+Total@{num\+Hits\+Total}}
+\index{num\+Hits\+Total@{num\+Hits\+Total}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{num\+Hits\+Total}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+num\+Hits\+Total = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a12b14e86987748eba712a9e78f0e65b3}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!num\+Ins@{num\+Ins}}
+\index{num\+Ins@{num\+Ins}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{num\+Ins}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+num\+Ins = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a9627419232cba606dc603386ba042c26}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!num\+Ins\+Total@{num\+Ins\+Total}}
+\index{num\+Ins\+Total@{num\+Ins\+Total}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{num\+Ins\+Total}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+num\+Ins\+Total = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a3987bc9fcdfcff4d3260be6addd6c6e8}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!num\+Sub@{num\+Sub}}
+\index{num\+Sub@{num\+Sub}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{num\+Sub}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+num\+Sub = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a343c1f1001f9a7e13717aa1eedeb84c7}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!num\+Sub\+Total@{num\+Sub\+Total}}
+\index{num\+Sub\+Total@{num\+Sub\+Total}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{num\+Sub\+Total}]{\setlength{\rightskip}{0pt plus 5cm}int project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+num\+Sub\+Total = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a8e7f217f3f0f53b126d44d40484f427a}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!sub\+Speech\+Folder@{sub\+Speech\+Folder}}
+\index{sub\+Speech\+Folder@{sub\+Speech\+Folder}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{sub\+Speech\+Folder}]{\setlength{\rightskip}{0pt plus 5cm}File project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+sub\+Speech\+Folder\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_acf0f88f7641719735ac04b8aa711e446}
+\index{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}!time\+Span@{time\+Span}}
+\index{time\+Span@{time\+Span}!project\+::speech\+::evaluator\+::\+Evaluation\+Aligner@{project\+::speech\+::evaluator\+::\+Evaluation\+Aligner}}
+\subsubsection[{time\+Span}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+evaluator.\+Evaluation\+Aligner.\+time\+Span\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner_a599b179bad8addf825b8c50734fddf77}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+project/speech/evaluator/{\bf Evaluation\+Aligner.\+java}\end{DoxyCompactItemize}

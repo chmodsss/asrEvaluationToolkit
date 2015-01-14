@@ -1,0 +1,111 @@
+\section{project.\+speech.\+asrengines.\+Ispeech\+Engine Class Reference}
+\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine}\index{project.\+speech.\+asrengines.\+Ispeech\+Engine@{project.\+speech.\+asrengines.\+Ispeech\+Engine}}
+Inheritance diagram for project.\+speech.\+asrengines.\+Ispeech\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Ispeech\+Engine} ()
+\item 
+void {\bf run\+File} (File current\+Speech\+Folder, File current\+Speech\+Files, File reference\+File)  throws Exception 
+\item 
+void {\bf state\+Changed} (int event, int free\+Form\+Value, Exception last\+Exception)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ String $>$ {\bf output\+Sentences\+Ispeech\+List} = new Array\+List$<$String$>$()
+\item 
+Array\+List$<$ String $>$ {\bf output\+File\+Names\+Ispeech\+List} = new Array\+List$<$String$>$()
+\item 
+double {\bf start\+Time\+Ms\+Ispeech}
+\item 
+double {\bf stop\+Time\+Ms\+Ispeech}
+\item 
+double {\bf time\+Diff\+Ispeech}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String {\bf api}
+\item 
+static boolean {\bf production}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}!Ispeech\+Engine@{Ispeech\+Engine}}
+\index{Ispeech\+Engine@{Ispeech\+Engine}!project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}}
+\subsubsection[{Ispeech\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}project.\+speech.\+asrengines.\+Ispeech\+Engine.\+Ispeech\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine_a3df65783c30f2a6af6f1702ed4541d4f}
+
+
+\subsection{Member Function Documentation}
+\index{project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}!run\+File@{run\+File}}
+\index{run\+File@{run\+File}!project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}}
+\subsubsection[{run\+File}]{\setlength{\rightskip}{0pt plus 5cm}void project.\+speech.\+asrengines.\+Ispeech\+Engine.\+run\+File (
+\begin{DoxyParamCaption}
+\item[{File}]{current\+Speech\+Folder, }
+\item[{File}]{current\+Speech\+Files, }
+\item[{File}]{reference\+File}
+\end{DoxyParamCaption}
+) throws Exception}\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine_ae8d11abffca81068fe6f0e320c850a32}
+This function initiates speech recognition in ispeech and calls \doxyref{File\+Scripter.\+writer}{p.}{classproject_1_1speech_1_1reader_and_writer_1_1_file_scripter_a41e17c95c8990c0259cc1b1fb9eaf902} to write the output in a file 
+\begin{DoxyParams}{Parameters}
+{\em current\+Speech\+Folder} & Directory containing the audio as well as reference text files \\
+\hline
+{\em current\+Speech\+Files} & Lower directory containing only the list of audio files \\
+\hline
+{\em reference\+File} & The reference file respective to the speech files being recognized \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\index{project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}!state\+Changed@{state\+Changed}}
+\index{state\+Changed@{state\+Changed}!project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}}
+\subsubsection[{state\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}void project.\+speech.\+asrengines.\+Ispeech\+Engine.\+state\+Changed (
+\begin{DoxyParamCaption}
+\item[{int}]{event, }
+\item[{int}]{free\+Form\+Value, }
+\item[{Exception}]{last\+Exception}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine_ad998ce02c0960c2f8a87483e8a4ecf6f}
+
+
+\subsection{Member Data Documentation}
+\index{project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}!api@{api}}
+\index{api@{api}!project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}}
+\subsubsection[{api}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+asrengines.\+Ispeech\+Engine.\+api\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine_a96d59d9b47d63be631354fd2773c1910}
+\index{project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}!output\+File\+Names\+Ispeech\+List@{output\+File\+Names\+Ispeech\+List}}
+\index{output\+File\+Names\+Ispeech\+List@{output\+File\+Names\+Ispeech\+List}!project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}}
+\subsubsection[{output\+File\+Names\+Ispeech\+List}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$String$>$ project.\+speech.\+asrengines.\+Ispeech\+Engine.\+output\+File\+Names\+Ispeech\+List = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine_a4d29e66408937ac4188229b4b2198132}
+\index{project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}!output\+Sentences\+Ispeech\+List@{output\+Sentences\+Ispeech\+List}}
+\index{output\+Sentences\+Ispeech\+List@{output\+Sentences\+Ispeech\+List}!project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}}
+\subsubsection[{output\+Sentences\+Ispeech\+List}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$String$>$ project.\+speech.\+asrengines.\+Ispeech\+Engine.\+output\+Sentences\+Ispeech\+List = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine_a2f96e80a8d364fb76e8b98be1cb2342c}
+\index{project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}!production@{production}}
+\index{production@{production}!project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}}
+\subsubsection[{production}]{\setlength{\rightskip}{0pt plus 5cm}boolean project.\+speech.\+asrengines.\+Ispeech\+Engine.\+production\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine_a9660f67cd28dd76af87fe81e86111f86}
+\index{project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}!start\+Time\+Ms\+Ispeech@{start\+Time\+Ms\+Ispeech}}
+\index{start\+Time\+Ms\+Ispeech@{start\+Time\+Ms\+Ispeech}!project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}}
+\subsubsection[{start\+Time\+Ms\+Ispeech}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+asrengines.\+Ispeech\+Engine.\+start\+Time\+Ms\+Ispeech\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine_af35ab752f183de83b5ba56643028c065}
+\index{project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}!stop\+Time\+Ms\+Ispeech@{stop\+Time\+Ms\+Ispeech}}
+\index{stop\+Time\+Ms\+Ispeech@{stop\+Time\+Ms\+Ispeech}!project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}}
+\subsubsection[{stop\+Time\+Ms\+Ispeech}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+asrengines.\+Ispeech\+Engine.\+stop\+Time\+Ms\+Ispeech\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine_a273e73123f75fdb60e6e8a96448aa686}
+\index{project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}!time\+Diff\+Ispeech@{time\+Diff\+Ispeech}}
+\index{time\+Diff\+Ispeech@{time\+Diff\+Ispeech}!project\+::speech\+::asrengines\+::\+Ispeech\+Engine@{project\+::speech\+::asrengines\+::\+Ispeech\+Engine}}
+\subsubsection[{time\+Diff\+Ispeech}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+asrengines.\+Ispeech\+Engine.\+time\+Diff\+Ispeech\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_ispeech_engine_a0d129ec33fbe333f3337ceeead4e6994}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+project/speech/asrengines/{\bf Ispeech\+Engine.\+java}\end{DoxyCompactItemize}

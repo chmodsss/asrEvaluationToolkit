@@ -1,0 +1,46 @@
+HVite -A -D -T 1 -l * -o SWT -b silence -C /data/svn-mirror/Main/Trunk/Scripts/AcousticModel_scripts/HTK/AMCreate_scripts/input_files/config -H ./interim_files/hmm7/macros -H ./interim_files/hmm7/hmmdefs -i ./interim_files/aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -a -I ./interim_files/words.mlf -S ./interim_files/train.scp ./interim_files/dict1 ./interim_files/monophones1 
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+#                 NUMCEPS                       12
+#                 CEPLIFTER                     22
+#                 NUMCHANS                      26
+#                 PREEMCOEF               0.970000
+#                 USEHAMMING                  TRUE
+#                 WINDOWSIZE         250000.000000
+#                 SAVEWITHCRC                 TRUE
+#                 SAVECOMPRESSED              TRUE
+#                 TARGETRATE         100000.000000
+#                 TARGETKIND          MFCC_0_D_N_Z
+
+Read 40 physical / 40 logical HMMs
+Label file will be used to align each file
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20090315-201527-1237148085.1892/mfc/vf8-31.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+silence THEREFORE HURRAH FOR THE GAME silence  ==  [527 frames] -54.3885 [Ac=-28662.7 LM=0.0] (Act=8.0)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20090315-201527-1237148085.1892/mfc/vf8-32.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+silence IT LIVED IN PERPETUAL APPREHENSION OF THAT QUARTER OF THE COMPASS silence  ==  [761 frames] -55.4238 [Ac=-42177.5 LM=0.0] (Act=8.9)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20090315-201527-1237148085.1892/mfc/vf8-33.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+silence BROKEN-TOOTH YELLED WITH FRIGHT AND PAIN silence  ==  [619 frames] -56.4345 [Ac=-34933.0 LM=0.0] (Act=9.5)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20090315-201527-1237148085.1892/mfc/vf8-34.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+silence THUS WAS MOMENTUM GAINED IN THE YOUNGER WORLD silence  ==  [675 frames] -55.3548 [Ac=-37364.5 LM=0.0] (Act=9.5)
+Aligning File: /data/UserSubmissions/Quarantine/voxforgeivr-20090315-201527-1237148085.1892/mfc/vf8-35.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+silence SAXON WAITED FOR SHE KNEW A FRESH IDEA HAD STRUCK BILLY silence  ==  [775 frames] -54.4554 [Ac=-42202.9 LM=0.0] (Act=12.0)
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+                  NUMCEPS                       12
+                  CEPLIFTER                     22
+                  NUMCHANS                      26
+                  PREEMCOEF               0.970000
+                  USEHAMMING                  TRUE
+                  WINDOWSIZE         250000.000000
+                  SAVEWITHCRC                 TRUE
+                  SAVECOMPRESSED              TRUE
+                  TARGETRATE         100000.000000
+                  TARGETKIND          MFCC_0_D_N_Z
+

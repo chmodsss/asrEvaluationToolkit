@@ -1,0 +1,122 @@
+\section{project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine Class Reference}
+\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine}\index{project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine@{project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Cmu\+Sphinx\+Engine} (File dictionary, String acoustic, File language)
+\item 
+Configuration {\bf configure} ()
+\item 
+void {\bf recognize\+Speech} (Configuration config, File current\+Speech\+Folder, File current\+Speech\+Files, File reference\+File)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String {\bf language\+Model}
+\item 
+String {\bf dictionary\+Model}
+\item 
+String {\bf acoustic\+Model}
+\item 
+Array\+List$<$ String $>$ {\bf output\+Sentences\+Cmu\+List} = new Array\+List$<$String$>$()
+\item 
+Array\+List$<$ String $>$ {\bf output\+File\+Names\+Cmu\+List} = new Array\+List$<$String$>$()
+\item 
+double {\bf start\+Time\+Ms\+Cmu}
+\item 
+double {\bf stop\+Time\+Ms\+Cmu}
+\item 
+double {\bf time\+Difference\+Cmu}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!Cmu\+Sphinx\+Engine@{Cmu\+Sphinx\+Engine}}
+\index{Cmu\+Sphinx\+Engine@{Cmu\+Sphinx\+Engine}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{Cmu\+Sphinx\+Engine}]{\setlength{\rightskip}{0pt plus 5cm}project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+Cmu\+Sphinx\+Engine (
+\begin{DoxyParamCaption}
+\item[{File}]{dictionary, }
+\item[{String}]{acoustic, }
+\item[{File}]{language}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_ac04cdd3d9210ae02721ae4ba14613437}
+This constructor assigns the model files for configuration 
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & Dictionary file \\
+\hline
+{\em acoustic} & Acoustic file \\
+\hline
+{\em language} & Language file \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!configure@{configure}}
+\index{configure@{configure}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{configure}]{\setlength{\rightskip}{0pt plus 5cm}Configuration project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+configure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_acb47e9ad30dd074fc7af81ac8d960d4c}
+\begin{DoxyReturn}{Returns}
+object of Configuration containing the dictionary, language and acoustic models 
+\end{DoxyReturn}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!recognize\+Speech@{recognize\+Speech}}
+\index{recognize\+Speech@{recognize\+Speech}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{recognize\+Speech}]{\setlength{\rightskip}{0pt plus 5cm}void project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+recognize\+Speech (
+\begin{DoxyParamCaption}
+\item[{Configuration}]{config, }
+\item[{File}]{current\+Speech\+Folder, }
+\item[{File}]{current\+Speech\+Files, }
+\item[{File}]{reference\+File}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_a3854f5db6fba1cfac9334fcded812bcb}
+This function initiates speech recognition in cmusphinx and calls \doxyref{File\+Scripter.\+writer}{p.}{classproject_1_1speech_1_1reader_and_writer_1_1_file_scripter_a41e17c95c8990c0259cc1b1fb9eaf902} to write the generated output in a file 
+\begin{DoxyParams}{Parameters}
+{\em config} & configuration object containing all the model files \\
+\hline
+{\em current\+Speech\+Folder} & Directory containing the audio as well as reference text files \\
+\hline
+{\em current\+Speech\+Files} & Lower directory containing only the list of audio files \\
+\hline
+{\em reference\+File} & The reference file respective to the speech files being recognized \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!acoustic\+Model@{acoustic\+Model}}
+\index{acoustic\+Model@{acoustic\+Model}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{acoustic\+Model}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+acoustic\+Model\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_a46c4e2e73622be82081a89067b4b6437}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!dictionary\+Model@{dictionary\+Model}}
+\index{dictionary\+Model@{dictionary\+Model}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{dictionary\+Model}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+dictionary\+Model\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_a9a9c829bc02cdc2eb19e0f865762a55b}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!language\+Model@{language\+Model}}
+\index{language\+Model@{language\+Model}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{language\+Model}]{\setlength{\rightskip}{0pt plus 5cm}String project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+language\+Model\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_a82b6b403c50b69f8138860970f85379e}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!output\+File\+Names\+Cmu\+List@{output\+File\+Names\+Cmu\+List}}
+\index{output\+File\+Names\+Cmu\+List@{output\+File\+Names\+Cmu\+List}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{output\+File\+Names\+Cmu\+List}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$String$>$ project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+output\+File\+Names\+Cmu\+List = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_a343386d7068b8358ec692a95b0f2a274}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!output\+Sentences\+Cmu\+List@{output\+Sentences\+Cmu\+List}}
+\index{output\+Sentences\+Cmu\+List@{output\+Sentences\+Cmu\+List}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{output\+Sentences\+Cmu\+List}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$String$>$ project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+output\+Sentences\+Cmu\+List = new Array\+List$<$String$>$()\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_acee8400f1a33a32527aaed604a822551}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!start\+Time\+Ms\+Cmu@{start\+Time\+Ms\+Cmu}}
+\index{start\+Time\+Ms\+Cmu@{start\+Time\+Ms\+Cmu}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{start\+Time\+Ms\+Cmu}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+start\+Time\+Ms\+Cmu\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_a4c4e5cc595d9f9dfe5506f75cb700b62}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!stop\+Time\+Ms\+Cmu@{stop\+Time\+Ms\+Cmu}}
+\index{stop\+Time\+Ms\+Cmu@{stop\+Time\+Ms\+Cmu}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{stop\+Time\+Ms\+Cmu}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+stop\+Time\+Ms\+Cmu\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_aabf9829bf6dc76e5b03ad6036f6d8f2a}
+\index{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}!time\+Difference\+Cmu@{time\+Difference\+Cmu}}
+\index{time\+Difference\+Cmu@{time\+Difference\+Cmu}!project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine@{project\+::speech\+::asrengines\+::\+Cmu\+Sphinx\+Engine}}
+\subsubsection[{time\+Difference\+Cmu}]{\setlength{\rightskip}{0pt plus 5cm}double project.\+speech.\+asrengines.\+Cmu\+Sphinx\+Engine.\+time\+Difference\+Cmu\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1asrengines_1_1_cmu_sphinx_engine_a9b1762c8a6e85ef74223decef47a5ce4}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+project/speech/asrengines/{\bf Cmu\+Sphinx\+Engine.\+java}\end{DoxyCompactItemize}
