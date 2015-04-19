@@ -1,3 +1,6 @@
+/**
+ * This package contains the ASR engines configured for this evaluation toolkit 
+ */
 package project.speech.asrEngines;
 
 import java.io.File;
@@ -15,6 +18,10 @@ import edu.cmu.sphinx.api.StreamSpeechRecognizer;
 import project.speech.globalAccess.Globals;
 import project.speech.readerAndWriter.*;
 
+/**
+ * This class contains the functions needed by the CMUSphinx 
+ * engine to perform the speech recognition process 
+ */
 public class CmuSphinxEngine {
 
 	private String languageModel;

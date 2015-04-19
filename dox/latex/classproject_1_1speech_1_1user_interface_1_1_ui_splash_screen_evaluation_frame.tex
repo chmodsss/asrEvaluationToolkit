@@ -1,24 +1,20 @@
 \section{project.\+speech.\+user\+Interface.\+Ui\+Splash\+Screen\+Evaluation\+Frame Class Reference}
 \label{classproject_1_1speech_1_1user_interface_1_1_ui_splash_screen_evaluation_frame}\index{project.\+speech.\+user\+Interface.\+Ui\+Splash\+Screen\+Evaluation\+Frame@{project.\+speech.\+user\+Interface.\+Ui\+Splash\+Screen\+Evaluation\+Frame}}
-Inheritance diagram for project.\+speech.\+user\+Interface.\+Ui\+Splash\+Screen\+Evaluation\+Frame\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classproject_1_1speech_1_1user_interface_1_1_ui_splash_screen_evaluation_frame}
-\end{center}
-\end{figure}
+
+
+Inherits J\+Window.
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf Ui\+Splash\+Screen\+Evaluation\+Frame} (final File speech\+Database\+Directory, final Array\+List$<$ {\bf Ui\+Asr\+Properties} $>$ asr\+Properties\+Obj, final Array\+List$<$ String $>$ selected\+Performance\+List, final Array\+List$<$ String $>$ selected\+Asr\+List, final String algorithm\+Selected)  throws Invocation\+Target\+Exception, Interrupted\+Exception  
+{\bf Ui\+Splash\+Screen\+Evaluation\+Frame} (final File speech\+Database\+Directory, final Array\+List$<$ {\bf Ui\+Asr\+Properties} $>$ asr\+Properties\+Obj, final Array\+List$<$ String $>$ selected\+Performance\+List, final Array\+List$<$ String $>$ selected\+Asr\+List, final String algorithm\+Selected, final Array\+List$<$ Integer $>$ penalty\+List\+Selected)  throws Invocation\+Target\+Exception, Interrupted\+Exception  
 \item 
-{\bf Ui\+Splash\+Screen\+Evaluation\+Frame} (final File reference\+File\+Path, final File hypothesis\+File\+Path, final Array\+List$<$ String $>$ performance\+List\+Selected, final String algorithm\+Selected)  throws Invocation\+Target\+Exception, Interrupted\+Exception  
-\end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-J\+Window {\bf create\+G\+U\+I} ()
+{\bf Ui\+Splash\+Screen\+Evaluation\+Frame} (final File reference\+File\+Path, final File hypothesis\+File\+Path, final Array\+List$<$ String $>$ performance\+List\+Selected, final String algorithm\+Selected, final Array\+List$<$ Integer $>$ penalty\+List\+Selected)  throws Invocation\+Target\+Exception, Interrupted\+Exception  
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+This class contains the frame, which displays an ongoing process, while the evaluation process is executing 
 
 \subsection{Constructor \& Destructor Documentation}
 \index{project\+::speech\+::user\+Interface\+::\+Ui\+Splash\+Screen\+Evaluation\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Splash\+Screen\+Evaluation\+Frame}!Ui\+Splash\+Screen\+Evaluation\+Frame@{Ui\+Splash\+Screen\+Evaluation\+Frame}}
@@ -29,9 +25,10 @@ J\+Window {\bf create\+G\+U\+I} ()
 \item[{final Array\+List$<$ {\bf Ui\+Asr\+Properties} $>$}]{asr\+Properties\+Obj, }
 \item[{final Array\+List$<$ String $>$}]{selected\+Performance\+List, }
 \item[{final Array\+List$<$ String $>$}]{selected\+Asr\+List, }
-\item[{final String}]{algorithm\+Selected}
+\item[{final String}]{algorithm\+Selected, }
+\item[{final Array\+List$<$ Integer $>$}]{penalty\+List\+Selected}
 \end{DoxyParamCaption}
-) throws Invocation\+Target\+Exception, Interrupted\+Exception}\label{classproject_1_1speech_1_1user_interface_1_1_ui_splash_screen_evaluation_frame_a7e625a2b9162f98b64474ab105a2dd70}
+) throws Invocation\+Target\+Exception, Interrupted\+Exception}\label{classproject_1_1speech_1_1user_interface_1_1_ui_splash_screen_evaluation_frame_a4f1d1555ee223beced190f5f81081462}
 
 \begin{DoxyParams}{Parameters}
 {\em speech\+Database\+Directory} & \\
@@ -49,7 +46,7 @@ J\+Window {\bf create\+G\+U\+I} ()
 \begin{DoxyExceptions}{Exceptions}
 {\em Invocation\+Target\+Exception} & \\
 \hline
-{\em Interrupted\+Exception} & \\
+{\em Interrupted\+Exception} & .parser.\+constructor \\
 \hline
 \end{DoxyExceptions}
 \index{project\+::speech\+::user\+Interface\+::\+Ui\+Splash\+Screen\+Evaluation\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Splash\+Screen\+Evaluation\+Frame}!Ui\+Splash\+Screen\+Evaluation\+Frame@{Ui\+Splash\+Screen\+Evaluation\+Frame}}
@@ -59,9 +56,10 @@ J\+Window {\bf create\+G\+U\+I} ()
 \item[{final File}]{reference\+File\+Path, }
 \item[{final File}]{hypothesis\+File\+Path, }
 \item[{final Array\+List$<$ String $>$}]{performance\+List\+Selected, }
-\item[{final String}]{algorithm\+Selected}
+\item[{final String}]{algorithm\+Selected, }
+\item[{final Array\+List$<$ Integer $>$}]{penalty\+List\+Selected}
 \end{DoxyParamCaption}
-) throws Invocation\+Target\+Exception, Interrupted\+Exception}\label{classproject_1_1speech_1_1user_interface_1_1_ui_splash_screen_evaluation_frame_ae0f5ad1c85779a6dc519532df2e60039}
+) throws Invocation\+Target\+Exception, Interrupted\+Exception}\label{classproject_1_1speech_1_1user_interface_1_1_ui_splash_screen_evaluation_frame_ac066722eb86942d06b4539749f09ebc4}
 Creates a thread to run the evaluation, in parallel to showing the loading splash screen 
 \begin{DoxyParams}{Parameters}
 {\em reference\+File\+Path} & Path of the reference file \\
@@ -82,19 +80,6 @@ Creates a thread to run the evaluation, in parallel to showing the loading splas
 \end{DoxyExceptions}
 
 
-\subsection{Member Function Documentation}
-\index{project\+::speech\+::user\+Interface\+::\+Ui\+Splash\+Screen\+Evaluation\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Splash\+Screen\+Evaluation\+Frame}!create\+G\+U\+I@{create\+G\+U\+I}}
-\index{create\+G\+U\+I@{create\+G\+U\+I}!project\+::speech\+::user\+Interface\+::\+Ui\+Splash\+Screen\+Evaluation\+Frame@{project\+::speech\+::user\+Interface\+::\+Ui\+Splash\+Screen\+Evaluation\+Frame}}
-\subsubsection[{create\+G\+U\+I}]{\setlength{\rightskip}{0pt plus 5cm}J\+Window project.\+speech.\+user\+Interface.\+Ui\+Splash\+Screen\+Evaluation\+Frame.\+create\+G\+U\+I (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\label{classproject_1_1speech_1_1user_interface_1_1_ui_splash_screen_evaluation_frame_a584004b3197b1c43b464c669f178bf44}
-\begin{DoxyReturn}{Returns}
-Object of J\+Window having all the properties 
-\end{DoxyReturn}
-
-
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-project/speech/user\+Interface/{\bf Ui\+Splash\+Screen\+Evaluation\+Frame.\+java}\end{DoxyCompactItemize}
+project/speech/user\+Interface/Ui\+Splash\+Screen\+Evaluation\+Frame.\+java\end{DoxyCompactItemize}

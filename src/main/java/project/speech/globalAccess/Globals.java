@@ -1,3 +1,6 @@
+/**
+ * This package contains the global variables needed for the whole package 
+ */
 package project.speech.globalAccess;
 
 import java.awt.Color;
@@ -5,6 +8,11 @@ import java.io.File;
 
 import javax.swing.UIManager;
 
+/**
+ * This class contains a list of public global variables, which are used in any packages, 
+ * for maintainability. Thus, changing of a path or a name will reflect in all the places.
+ *
+ */
 public class Globals {
 	
 	public static String theme1 = UIManager.getSystemLookAndFeelClassName();

@@ -6,6 +6,10 @@ import javax.swing.*;
 
 import project.speech.globalAccess.Globals;
 
+/**
+ * This class contains the frame , which is displayed at the startup for 3 seconds, just to display the toolkit name
+ *
+ */
 @SuppressWarnings("serial")
 public class UiSplashScreenLoadingFrame extends JWindow {
 	

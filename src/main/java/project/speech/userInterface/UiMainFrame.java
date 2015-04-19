@@ -10,7 +10,10 @@ import org.apache.commons.io.FileUtils;
 
 import project.speech.globalAccess.Globals;
 
-
+/**
+ * The GUI part of the framework is governed by this package.
+ * All the frames and windows of the GUI have their own class. 
+ */
 public class UiMainFrame extends JFrame {
 
 	static JFrame frameMain;

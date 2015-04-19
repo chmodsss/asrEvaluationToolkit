@@ -5,6 +5,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * This class contain functions to read the list of available folders in a given directory
+ *
+ */
 public class FileReader {
 	private static ArrayList<String> filePath = new ArrayList<String>();
 	private static ArrayList<String> fileNameExtension = new ArrayList<String>();

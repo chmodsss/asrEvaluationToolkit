@@ -14,6 +14,10 @@ import com.iSpeech.SpeechResult;
 import com.iSpeech.iSpeechRecognizer;
 import com.iSpeech.iSpeechRecognizer.SpeechRecognizerEvent;
 
+/**
+ * This class contains the functions needed by the iSpeech 
+ * engine to perform the speech recognition process 
+ */
 public class IspeechEngine implements SpeechRecognizerEvent {
 	private static String api;
 	private static boolean production;

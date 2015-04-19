@@ -1,3 +1,7 @@
+/**
+ * This package is responsible to communicate with the GUI interface, 
+ * thus executing the whole evaluation process based upon user selections
+ */
 package project.speech.evaluationSystem;
 
 import project.speech.globalAccess.*;
@@ -15,6 +19,12 @@ import edu.cmu.sphinx.api.Configuration;
 import project.speech.asrEngines.*;
 import project.speech.evaluator.*;
 import project.speech.userInterface.UiAsrProperties;
+
+/**
+ * This classs contains the functions required to initiate the recognition process,
+ * as well as the evaluation process and ultimately the result is also obtained and
+ *  provided to the GUI from this class
+ */
 
 public class EvaluationSystem {
 

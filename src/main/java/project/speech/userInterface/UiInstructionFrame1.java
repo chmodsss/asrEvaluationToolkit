@@ -6,7 +6,10 @@ import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.awt.Toolkit;
 
-
+/**
+ * This class contains the window, which displays the instructions for recognise and evaluate component
+ *
+ */
 @SuppressWarnings("serial")
 public class UiInstructionFrame1 extends JFrame {
 

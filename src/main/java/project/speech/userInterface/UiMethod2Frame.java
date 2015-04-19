@@ -13,6 +13,10 @@ import java.util.ArrayList;
 import java.awt.Toolkit;
 
 
+/**
+ * This class contains the window, which displays the options available in performance calculator component
+ *
+ */
 public class UiMethod2Frame {
 
 	static JFrame frame2;
@@ -536,7 +540,11 @@ public class UiMethod2Frame {
 				if (referenceFileLoaded && hypothesisFileLoaded && (!performanceListSelected.isEmpty() && (algorithmSelected != null))){
 					btnEvaluate.setEnabled(true);
 				}
-				 if(!btnEvaluate.isEnabled())
+				 if(btnEvaluate.isEnabled())
+				 {
+					 JOptionPane.showMessageDialog(frame2,  "Successful ! \n Click Evaluate and please wait till the evaluation is complete...", "Data completed", JOptionPane.INFORMATION_MESSAGE);
+				 }
+				 else
 				 {
 					 JOptionPane.showMessageDialog(frame2, "One or more selections are missing !", "Incomplete data", JOptionPane.INFORMATION_MESSAGE);
 				 }

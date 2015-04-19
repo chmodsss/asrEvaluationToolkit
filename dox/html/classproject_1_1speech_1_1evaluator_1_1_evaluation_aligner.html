@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9"/>
-<title>ASRevaluationtoolkit: project.speech.evaluator.EvaluationAligner Class Reference</title>
+<title>ASR evaluation toolkit: project.speech.evaluator.EvaluationAligner Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,10 +22,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo_main.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ASRevaluationtoolkit
+   <div id="projectname">ASR evaluation toolkit
    &#160;<span id="projectnumber">1.0</span>
    </div>
+   <div id="projectbrief">This toolkit is used as a generic system to evaluate multiple ASR engines having Java SDK .</div>
   </td>
  </tr>
  </tbody>
@@ -41,7 +43,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -64,7 +65,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -84,14 +84,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceproject.html">project</a></li><li class="navelem"><a class="el" href="namespaceproject_1_1speech.html">speech</a></li><li class="navelem"><a class="el" href="namespaceproject_1_1speech_1_1evaluator.html">evaluator</a></li><li class="navelem"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html">EvaluationAligner</a></li>  </ul>
+<li class="navelem"><b>project</b></li><li class="navelem"><b>speech</b></li><li class="navelem"><a class="el" href="namespaceproject_1_1speech_1_1evaluator.html">evaluator</a></li><li class="navelem"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html">EvaluationAligner</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">project.speech.evaluator.EvaluationAligner Class Reference</div>  </div>
@@ -100,63 +98,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acb8dc143a5a2dc13d5a3f8aa830bec9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#acb8dc143a5a2dc13d5a3f8aa830bec9e">EvaluationAligner</a> (File referenceFile, File hypothesisFile, File timeFile)</td></tr>
-<tr class="separator:acb8dc143a5a2dc13d5a3f8aa830bec9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfe521d3afc58d448becbcc5c2a519f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#acfe521d3afc58d448becbcc5c2a519f9">EvaluationAligner</a> (File referenceFile, File hypothesisFile)</td></tr>
-<tr class="separator:acfe521d3afc58d448becbcc5c2a519f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae9e2f5956e730ff84923e337d66f9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluator_result.html">EvaluatorResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a3ae9e2f5956e730ff84923e337d66f9b">evaluateWithTime</a> (File <a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#acf0f88f7641719735ac04b8aa711e446">subSpeechFolder</a>, String asrUsed)  throws IOException </td></tr>
+<tr class="memitem:a3616d62577cd72750e86d641b9c30885"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a3616d62577cd72750e86d641b9c30885">EvaluationAligner</a> (File referenceFile, File hypothesisFile, File timeFile, ArrayList&lt; Integer &gt; penaltyListSelected)</td></tr>
+<tr class="separator:a3616d62577cd72750e86d641b9c30885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ddd4bd29b18474e4efe59c27a4f104"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a23ddd4bd29b18474e4efe59c27a4f104">EvaluationAligner</a> (File referenceFile, File hypothesisFile, ArrayList&lt; Integer &gt; penaltyListSelected)</td></tr>
+<tr class="separator:a23ddd4bd29b18474e4efe59c27a4f104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae9e2f5956e730ff84923e337d66f9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluator_result.html">EvaluatorResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a3ae9e2f5956e730ff84923e337d66f9b">evaluateWithTime</a> (File subSpeechFolder, String asrUsed)  throws IOException </td></tr>
 <tr class="separator:a3ae9e2f5956e730ff84923e337d66f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1b2093a4f9c3e4739922a8b7e2542f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluator_result.html">EvaluatorResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#ac1b2093a4f9c3e4739922a8b7e2542f4">evaluateNoTime</a> ()  throws IOException </td></tr>
 <tr class="separator:ac1b2093a4f9c3e4739922a8b7e2542f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43ca9cc71f052417a654af820580693e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a43ca9cc71f052417a654af820580693e">evaluate</a> ()  throws IOException</td></tr>
 <tr class="separator:a43ca9cc71f052417a654af820580693e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a12b14e86987748eba712a9e78f0e65b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a12b14e86987748eba712a9e78f0e65b3">numHitsTotal</a> = 0</td></tr>
-<tr class="separator:a12b14e86987748eba712a9e78f0e65b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e7f217f3f0f53b126d44d40484f427a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a8e7f217f3f0f53b126d44d40484f427a">numSubTotal</a> = 0</td></tr>
-<tr class="separator:a8e7f217f3f0f53b126d44d40484f427a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacea48d20d81ae6f82395b88d94929f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#aacea48d20d81ae6f82395b88d94929f4">numDelTotal</a> = 0</td></tr>
-<tr class="separator:aacea48d20d81ae6f82395b88d94929f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3987bc9fcdfcff4d3260be6addd6c6e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a3987bc9fcdfcff4d3260be6addd6c6e8">numInsTotal</a> = 0</td></tr>
-<tr class="separator:a3987bc9fcdfcff4d3260be6addd6c6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea058a4da05e3075d39a0837d3ee2070"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#aea058a4da05e3075d39a0837d3ee2070">numHits</a> = 0</td></tr>
-<tr class="separator:aea058a4da05e3075d39a0837d3ee2070"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a343c1f1001f9a7e13717aa1eedeb84c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a343c1f1001f9a7e13717aa1eedeb84c7">numSub</a> = 0</td></tr>
-<tr class="separator:a343c1f1001f9a7e13717aa1eedeb84c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a5c39c149f39c34990a9d8283c0058"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a07a5c39c149f39c34990a9d8283c0058">numDel</a> = 0</td></tr>
-<tr class="separator:a07a5c39c149f39c34990a9d8283c0058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9627419232cba606dc603386ba042c26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a9627419232cba606dc603386ba042c26">numIns</a> = 0</td></tr>
-<tr class="separator:a9627419232cba606dc603386ba042c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aced9453509bf300040edd839a6aa1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a0aced9453509bf300040edd839a6aa1f">numberOfWords</a> = 0</td></tr>
-<tr class="separator:a0aced9453509bf300040edd839a6aa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a609449ba2afa1c103d6c2d4f8746ab49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a609449ba2afa1c103d6c2d4f8746ab49">numberOfWordsTotal</a> = 0</td></tr>
-<tr class="separator:a609449ba2afa1c103d6c2d4f8746ab49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96cfef1cd6fbeaa6a725b0f975936e75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a96cfef1cd6fbeaa6a725b0f975936e75">markLimit</a> = 1000</td></tr>
-<tr class="separator:a96cfef1cd6fbeaa6a725b0f975936e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599b179bad8addf825b8c50734fddf77"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a599b179bad8addf825b8c50734fddf77">timeSpan</a></td></tr>
-<tr class="separator:a599b179bad8addf825b8c50734fddf77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8a4497f2558c4c3bc8f8cb9b2eb0310"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#ae8a4497f2558c4c3bc8f8cb9b2eb0310">model1</a> = &quot;model1&quot;</td></tr>
-<tr class="separator:ae8a4497f2558c4c3bc8f8cb9b2eb0310"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db13c2cd7ed2092cd3118da34b659fb"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a6db13c2cd7ed2092cd3118da34b659fb">model2</a> = &quot;model2&quot;</td></tr>
-<tr class="separator:a6db13c2cd7ed2092cd3118da34b659fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c68cc1e42851f05c254d2629c054ef9"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a2c68cc1e42851f05c254d2629c054ef9">model</a></td></tr>
-<tr class="separator:a2c68cc1e42851f05c254d2629c054ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95d132d92805ab864fee1a0cb6189776"><td class="memItemLeft" align="right" valign="top">File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a95d132d92805ab864fee1a0cb6189776">alignmentFile</a></td></tr>
-<tr class="separator:a95d132d92805ab864fee1a0cb6189776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0aa4327bfb33fe6a6a7a9b9b0503e15"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#aa0aa4327bfb33fe6a6a7a9b9b0503e15">asrUSed</a></td></tr>
-<tr class="separator:aa0aa4327bfb33fe6a6a7a9b9b0503e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf0f88f7641719735ac04b8aa711e446"><td class="memItemLeft" align="right" valign="top">File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#acf0f88f7641719735ac04b8aa711e446">subSpeechFolder</a></td></tr>
-<tr class="separator:acf0f88f7641719735ac04b8aa711e446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a9a89f83fd01eaed4e395e59ac1de5a10"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproject_1_1speech_1_1evaluator_1_1_evaluation_aligner.html#a9a89f83fd01eaed4e395e59ac1de5a10">empty</a> = &quot;*****&quot;</td></tr>
-<tr class="separator:a9a89f83fd01eaed4e395e59ac1de5a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="acb8dc143a5a2dc13d5a3f8aa830bec9e"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Copyright 2011 Brian Romanowski. All rights reserved. Portions Copyright 1999-2002 Carnegie Mellon University. Portions Copyright 2002 Sun Microsystems, Inc. Portions Copyright 2002 Mitsubishi Electric Research Laboratories.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p><ol type="1">
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ol>
+<p>THIS SOFTWARE IS PROVIDED BY BRIAN ROMANOWSKI ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL BRIAN ROMANOWSKI OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. The views and conclusions contained in the software and documentation are those of the authors. This class is responsible to align the reference text with the hypothesis text received, thereby computing the number of hits, substitutions, deletions and insertions occured </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a3616d62577cd72750e86d641b9c30885"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -176,7 +137,13 @@ Static Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">File&#160;</td>
-          <td class="paramname"><em>timeFile</em>&#160;</td>
+          <td class="paramname"><em>timeFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ArrayList&lt; Integer &gt;&#160;</td>
+          <td class="paramname"><em>penaltyListSelected</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -185,7 +152,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This constructor assigns the following files and sets the model to be recognise and evaluate(model1) </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This constructor assigns the following files and sets the model to be recognize and evaluate(model1) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">referenceFile</td><td>Reference text file for evaluation </td></tr>
     <tr><td class="paramname">hypothesisFile</td><td>Hypothesis text file to be evaluated </td></tr>
@@ -196,7 +163,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acfe521d3afc58d448becbcc5c2a519f9"></a>
+<a class="anchor" id="a23ddd4bd29b18474e4efe59c27a4f104"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -210,7 +177,13 @@ Static Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">File&#160;</td>
-          <td class="paramname"><em>hypothesisFile</em>&#160;</td>
+          <td class="paramname"><em>hypothesisFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ArrayList&lt; Integer &gt;&#160;</td>
+          <td class="paramname"><em>penaltyListSelected</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,394 +286,13 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a95d132d92805ab864fee1a0cb6189776"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">File project.speech.evaluator.EvaluationAligner.alignmentFile</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa0aa4327bfb33fe6a6a7a9b9b0503e15"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String project.speech.evaluator.EvaluationAligner.asrUSed</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9a89f83fd01eaed4e395e59ac1de5a10"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String project.speech.evaluator.EvaluationAligner.empty = &quot;*****&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a96cfef1cd6fbeaa6a725b0f975936e75"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.markLimit = 1000</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2c68cc1e42851f05c254d2629c054ef9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String project.speech.evaluator.EvaluationAligner.model</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae8a4497f2558c4c3bc8f8cb9b2eb0310"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String project.speech.evaluator.EvaluationAligner.model1 = &quot;model1&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6db13c2cd7ed2092cd3118da34b659fb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String project.speech.evaluator.EvaluationAligner.model2 = &quot;model2&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0aced9453509bf300040edd839a6aa1f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.numberOfWords = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a609449ba2afa1c103d6c2d4f8746ab49"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.numberOfWordsTotal = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a07a5c39c149f39c34990a9d8283c0058"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.numDel = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aacea48d20d81ae6f82395b88d94929f4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.numDelTotal = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aea058a4da05e3075d39a0837d3ee2070"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.numHits = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a12b14e86987748eba712a9e78f0e65b3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.numHitsTotal = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9627419232cba606dc603386ba042c26"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.numIns = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3987bc9fcdfcff4d3260be6addd6c6e8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.numInsTotal = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a343c1f1001f9a7e13717aa1eedeb84c7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.numSub = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8e7f217f3f0f53b126d44d40484f427a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int project.speech.evaluator.EvaluationAligner.numSubTotal = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acf0f88f7641719735ac04b8aa711e446"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">File project.speech.evaluator.EvaluationAligner.subSpeechFolder</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a599b179bad8addf825b8c50734fddf77"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String project.speech.evaluator.EvaluationAligner.timeSpan</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>project/speech/evaluator/<a class="el" href="_evaluation_aligner_8java.html">EvaluationAligner.java</a></li>
+<li>project/speech/evaluator/EvaluationAligner.java</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 5 2015 23:41:47 for ASRevaluationtoolkit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 15 2015 11:58:15 for ASR evaluation toolkit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9
 </small></address>

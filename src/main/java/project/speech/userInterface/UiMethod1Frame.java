@@ -11,6 +11,10 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
 
+/**
+ * This class contains the window, which displays the options available in recognise and evaluate component
+ *
+ */
 public class UiMethod1Frame {
 
 	// Buttons on the UI

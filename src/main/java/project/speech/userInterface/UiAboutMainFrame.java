@@ -1,3 +1,7 @@
+/**
+ * This class contains the window which displays the name of the toolkit, author, version and the copywright 
+ */
+
 package project.speech.userInterface;
 
 
@@ -6,6 +10,11 @@ import javax.swing.border.*;
 import java.awt.Font;
 import java.awt.Toolkit;
 
+/**
+ * This class contains the main frame which provides the options to the author to choose 
+ * between models and could also view the "about" feature of this toolkit
+ *
+ */
 @SuppressWarnings("serial")
 public class UiAboutMainFrame extends JDialog {
 
@@ -26,7 +35,7 @@ public class UiAboutMainFrame extends JDialog {
 		lblAsrLogo.setBounds(135, 21, 209, 195);
 		contentPane.add(lblAsrLogo);
 		
-		JLabel lblNewLabel = new JLabel("<html>\r\n<u><center><font size=\"6\"> ASR Evaluation toolkit </font> </center> </u><br>\r\n<center> Version 1.0 Initial release </center> <br>\r\n<center><font size=\"3\"> Redistributable and modifiable under the terms and condions provided in the license file </font></center> <br>\r\n<center> Developed by: Sivasurya santhanam </center> <br>\r\n<center> Contributors: Rhama dwiputra </center> <br>\r\n<center> Copyright &copy 1991. All rights reserved </center> <br>\r\n</html>");
+		JLabel lblNewLabel = new JLabel("<html>\r\n<u><center><font size=\"6\"> ASR Evaluation toolkit </font> </center> </u><br>\r\n<center> Version 1.0 Initial release </center> <br>\r\n<center><font size=\"3\"> Redistributable and modifiable under the terms and condions provided in the license file </font></center> <br>\r\n<center> Developed by: Sivasurya Santhanam </center> <br>\r\n<center> Contributors: Rhama Dwiputra </center> <br>\r\n<center> Copyright &copy 1991. All rights reserved </center> <br>\r\n</html>");
 		lblNewLabel.setFont(new Font("Cambria Math", Font.PLAIN, 14));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setVerticalAlignment(SwingConstants.TOP);

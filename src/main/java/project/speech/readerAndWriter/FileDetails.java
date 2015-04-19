@@ -1,7 +1,14 @@
+/**
+ * This package contain classes for writing and reading data into and from a file
+ */
 package project.speech.readerAndWriter;
 
 import java.util.ArrayList;
 
+/**
+ * This class is used to store the details of a file, such as the path of the file and 
+ * the file name
+ */
 public class FileDetails {
 private ArrayList<String> filePath;
 private ArrayList<String> fileNameExtension;

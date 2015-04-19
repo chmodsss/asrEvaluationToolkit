@@ -1,0 +1,125 @@
+\section{project.\+speech.\+evaluation\+System.\+Evaluation\+System Class Reference}
+\label{classproject_1_1speech_1_1evaluation_system_1_1_evaluation_system}\index{project.\+speech.\+evaluation\+System.\+Evaluation\+System@{project.\+speech.\+evaluation\+System.\+Evaluation\+System}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Array\+List$<$ File $>$ {\bf read\+Directory} (File current\+Path)
+\item 
+static void {\bf write\+Result\+File} (File file\+To\+Write\+Result, Array\+List$<$ String $>$ temp\+Selected\+Performance\+List, {\bf Evaluator\+Result} eresult, String temp\+Hypothesis\+File\+Name, File sub\+Speech\+Folder)  throws I\+O\+Exception
+\item 
+static void {\bf performance\+Calculation} (File temp\+Reference\+File, File temp\+Hypothesis\+File, Array\+List$<$ String $>$ performance\+List, String algorithm\+Selected, Array\+List$<$ Integer $>$ penalty\+List\+Selected)  throws I\+O\+Exception 
+\item 
+static void {\bf recognise\+And\+Evaluate} (File speech\+Database\+Directory, Array\+List$<$ {\bf Ui\+Asr\+Properties} $>$ asr\+Properties\+Obj, Array\+List$<$ String $>$ selected\+Performance\+List, Array\+List$<$ String $>$ selected\+Asr\+List, String algorithm\+Selected, Array\+List$<$ Integer $>$ penalty\+List\+Selected)  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This classs contains the functions required to initiate the recognition process, as well as the evaluation process and ultimately the result is also obtained and provided to the G\+U\+I from this class 
+
+\subsection{Member Function Documentation}
+\index{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System@{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System}!performance\+Calculation@{performance\+Calculation}}
+\index{performance\+Calculation@{performance\+Calculation}!project\+::speech\+::evaluation\+System\+::\+Evaluation\+System@{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System}}
+\subsubsection[{performance\+Calculation}]{\setlength{\rightskip}{0pt plus 5cm}static void project.\+speech.\+evaluation\+System.\+Evaluation\+System.\+performance\+Calculation (
+\begin{DoxyParamCaption}
+\item[{File}]{temp\+Reference\+File, }
+\item[{File}]{temp\+Hypothesis\+File, }
+\item[{Array\+List$<$ String $>$}]{performance\+List, }
+\item[{String}]{algorithm\+Selected, }
+\item[{Array\+List$<$ Integer $>$}]{penalty\+List\+Selected}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1evaluation_system_1_1_evaluation_system_a4c5655d52481a37ee3ce8dae44de8512}
+This function is called when the second model is chosen, which only needs reference text file and hypothesis text file to make the alignment process and determine the performance measures 
+\begin{DoxyParams}{Parameters}
+{\em temp\+Reference\+File} & Reference text file for evaluation \\
+\hline
+{\em temp\+Hypothesis\+File} & Hypothesis text file to be evaluated \\
+\hline
+{\em performance\+List} & List of performance metrics needed as the result \\
+\hline
+{\em algorithm\+Selected} & alignment algorithm selected \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & if the result directory could not be deleted \\
+\hline
+\end{DoxyExceptions}
+\index{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System@{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System}!read\+Directory@{read\+Directory}}
+\index{read\+Directory@{read\+Directory}!project\+::speech\+::evaluation\+System\+::\+Evaluation\+System@{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System}}
+\subsubsection[{read\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}static Array\+List$<$File$>$ project.\+speech.\+evaluation\+System.\+Evaluation\+System.\+read\+Directory (
+\begin{DoxyParamCaption}
+\item[{File}]{current\+Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1evaluation_system_1_1_evaluation_system_aafe6af31c6299eca69dca40046a2db27}
+This functions receives a path and returns the files or folders in the path 
+\begin{DoxyParams}{Parameters}
+{\em current\+Path} & Path of current folder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list of files or folders present inside the current\+Path 
+\end{DoxyReturn}
+\index{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System@{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System}!recognise\+And\+Evaluate@{recognise\+And\+Evaluate}}
+\index{recognise\+And\+Evaluate@{recognise\+And\+Evaluate}!project\+::speech\+::evaluation\+System\+::\+Evaluation\+System@{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System}}
+\subsubsection[{recognise\+And\+Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}static void project.\+speech.\+evaluation\+System.\+Evaluation\+System.\+recognise\+And\+Evaluate (
+\begin{DoxyParamCaption}
+\item[{File}]{speech\+Database\+Directory, }
+\item[{Array\+List$<$ {\bf Ui\+Asr\+Properties} $>$}]{asr\+Properties\+Obj, }
+\item[{Array\+List$<$ String $>$}]{selected\+Performance\+List, }
+\item[{Array\+List$<$ String $>$}]{selected\+Asr\+List, }
+\item[{String}]{algorithm\+Selected, }
+\item[{Array\+List$<$ Integer $>$}]{penalty\+List\+Selected}
+\end{DoxyParamCaption}
+) throws Exception\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1evaluation_system_1_1_evaluation_system_afaadcd697849ef9ac34718e8af04f7b9}
+
+\begin{DoxyParams}{Parameters}
+{\em speech\+Database\+Directory} & Directory where the speech folders are stored \\
+\hline
+{\em asr\+Properties\+Obj} & List containing the paths of dictionary, language and acoustic files \\
+\hline
+{\em selected\+Performance\+List} & List of performance metrics needed as the result \\
+\hline
+{\em selected\+Asr\+List} & list containing the speech recognition engines selected for evaluation \\
+\hline
+{\em algorithm\+Selected} & Alignment algorithm selected \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & when the result directory could not be deleted \\
+\hline
+\end{DoxyExceptions}
+\index{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System@{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System}!write\+Result\+File@{write\+Result\+File}}
+\index{write\+Result\+File@{write\+Result\+File}!project\+::speech\+::evaluation\+System\+::\+Evaluation\+System@{project\+::speech\+::evaluation\+System\+::\+Evaluation\+System}}
+\subsubsection[{write\+Result\+File}]{\setlength{\rightskip}{0pt plus 5cm}static void project.\+speech.\+evaluation\+System.\+Evaluation\+System.\+write\+Result\+File (
+\begin{DoxyParamCaption}
+\item[{File}]{file\+To\+Write\+Result, }
+\item[{Array\+List$<$ String $>$}]{temp\+Selected\+Performance\+List, }
+\item[{{\bf Evaluator\+Result}}]{eresult, }
+\item[{String}]{temp\+Hypothesis\+File\+Name, }
+\item[{File}]{sub\+Speech\+Folder}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}}\label{classproject_1_1speech_1_1evaluation_system_1_1_evaluation_system_a61c5e61ec9ca4c3c663022d959702053}
+This function writes the results generated in a file 
+\begin{DoxyParams}{Parameters}
+{\em file\+To\+Write\+Result} & File where the result should be written \\
+\hline
+{\em temp\+Selected\+Performance\+List} & List of performance metrics needed as the result \\
+\hline
+{\em eresult} & evaluation result containing hits, substitutions, deletions, insertions and number of words \\
+\hline
+{\em temp\+Hypothesis\+File\+Name} & Name of the hypothesis text file written by the speech recognition engine(contains name of the speech recognition system) \\
+\hline
+{\em sub\+Speech\+Folder} & Name of the folder, where the reference and hypothesis text are stored \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & when the file cannot be written \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+project/speech/evaluationsystem/Evaluation\+System.\+java\end{DoxyCompactItemize}

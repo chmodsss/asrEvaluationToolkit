@@ -6,6 +6,10 @@ import javax.swing.border.*;
 import java.awt.Toolkit;
 
 
+/**
+ * This class contains the window, which displays the instructions for performance calculator component
+ *
+ */
 @SuppressWarnings("serial")
 public class UiInstructionFrame2 extends JFrame {
 

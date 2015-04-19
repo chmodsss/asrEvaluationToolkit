@@ -2,6 +2,10 @@ package project.speech.userInterface;
 
 import java.io.File;
 
+/**
+ * The property files such as dictionary, acoustic model and language file are stored in this class
+ *
+ */
 public class UiAsrProperties {
 	private File uiSpeechCorpus;
 	private File uiDictionary;

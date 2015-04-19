@@ -9,9 +9,13 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
+/**
+ * Writing to a file is done with the help of functions from this class.
+ */
 public class FileScripter {
 /**
- * This function writes the output obtained by the speech recognizer in a file
+ * This function writes the output obtained by the speech recognizer in a file (hypothesis file)
+ * 
  * @param asrName Name of the speech recognition engine used 
  * @param databaseName Name of the speech folder used for recognition
  * @param referenceFile Reference file available in the speech database for evaluation

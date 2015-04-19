@@ -13,6 +13,10 @@ import org.apache.commons.io.FileUtils;
 import project.speech.evaluationSystem.EvaluationSystem;
 import project.speech.globalAccess.Globals;
 
+/**
+ * This class contains the frame, which displays an ongoing process, while the evaluation process is executing
+ *
+ */
 @SuppressWarnings("serial")
 public class UiSplashScreenEvaluationFrame extends JWindow {
 	
@@ -94,19 +98,19 @@ public class UiSplashScreenEvaluationFrame extends JWindow {
 	       	
 	       	JLabel lblgif = new JLabel("");
 	       	lblgif.setIcon(new ImageIcon(UiSplashScreenEvaluationFrame.class.getResource("/project/speech/userInterface/evaluategif.GIF")));
-	       	lblgif.setBounds(130, 360, 190, 50);
+	       	lblgif.setBounds(150, 360, 190, 50);
 	       	getContentPane().add(lblgif);
 	       	
 	       	JLabel label_1 = new JLabel("");
 	       	label_1.setIcon(new ImageIcon(UiSplashScreenEvaluationFrame.class.getResource("/project/speech/userInterface/evaluategif.GIF")));
-	       	label_1.setBounds(315, 360, 200, 50);
+	       	label_1.setBounds(335, 360, 200, 50);
 	       	getContentPane().add(label_1);
 	       	
 	       	JLabel lblLoading = new JLabel("");
 	       	getContentPane().add(lblLoading);
 	       	lblLoading.setIcon(new ImageIcon(UiSplashScreenEvaluationFrame.class.getResource("/project/speech/userInterface/load.GIF")));
 	       	lblLoading.setFont(new Font("SansSerif", Font.PLAIN, 16));
-	       	lblLoading.setBounds(225, 315, 200, 30);
+	       	lblLoading.setBounds(270, 315, 200, 30);
 
 	        
 	        content.setBorder(BorderFactory.createLineBorder(Globals.turquoise, 5));

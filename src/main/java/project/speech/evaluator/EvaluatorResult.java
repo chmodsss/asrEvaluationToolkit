@@ -1,5 +1,10 @@
 package project.speech.evaluator;
 
+/**
+ * This class has a number of getter methods, to retrieve the informations about the 
+ * result of alignment process
+ *
+ */
 public class EvaluatorResult {
 	private int hits;
 	private int substitutions;

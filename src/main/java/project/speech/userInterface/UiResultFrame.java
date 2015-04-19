@@ -26,6 +26,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 
+/**
+ * This class contains the window which displays the final result with options to save the result
+ */
 public class UiResultFrame {
 
 	private static JFrame frameResult;
