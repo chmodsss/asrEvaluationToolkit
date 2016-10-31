@@ -19,3 +19,5 @@ java -Xms1300m -Xmx1500m -jar asrEvaluationLinux.jar
 For testing, the toolkit already comes with a "res" folder containing all the models and speech database.
 
 Other models or database can also be used and should follow the format specified in the instructions panel in the toolkit.
+
+A detailed description of the project is available at the wiki page https://github.com/sivu1/asrEvaluationToolkit/wiki
