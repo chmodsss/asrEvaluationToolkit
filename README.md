@@ -1,5 +1,6 @@
 # asrEvaluationToolkit
-This toolkit is used to as a generic system to evaluate multiple asr engines having java SDK
+This toolkit is used to as a generic system to evaluate multiple asr engines having java SDK. 
+A detailed description of the project is available at the wiki page https://github.com/sivu1/asrEvaluationToolkit/wiki
 
 ## For windows users
 This toolkit will consume a minimum memory of 1300MB and maximum memory of 1500MB.
@@ -19,5 +20,3 @@ java -Xms1300m -Xmx1500m -jar asrEvaluationLinux.jar
 For testing, the toolkit already comes with a "res" folder containing all the models and speech database.
 
 Other models or database can also be used and should follow the format specified in the instructions panel in the toolkit.
-
-A detailed description of the project is available at the wiki page https://github.com/sivu1/asrEvaluationToolkit/wiki
