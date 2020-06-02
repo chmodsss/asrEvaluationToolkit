@@ -1,6 +1,6 @@
 # asrEvaluationToolkit
 This toolkit is used to as a generic system to evaluate multiple asr engines having java SDK. 
-A detailed description of the project is available at the wiki page https://github.com/sivu1/asrEvaluationToolkit/wiki
+A detailed description of the project is available at the wiki page https://github.com/chmodsss/asrEvaluationToolkit/wiki
 
 ## For windows users
 This toolkit will consume a minimum memory of 1300MB and maximum memory of 1500MB.
